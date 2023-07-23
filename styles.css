@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5em;  /* This will make the text 1.5 times bigger */
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+a:visited {
+    color: inherit;
+}
+
+img {
+    border-radius: 50%;
+    width: 30vh;  /* This will make the image 1.5 times bigger */
+    height: auto;
+}
