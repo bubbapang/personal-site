@@ -28,7 +28,7 @@ img {
 nav {
     background: #333;
     height: 100%;
-    width: 200px;
+    width: 10%;
     position: fixed;
     left: 0;
     top: 0;
@@ -53,5 +53,5 @@ nav ul li a {
 }
 
 main {
-    margin-left: 250px;
+    margin-left: 15%;
 }
