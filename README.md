@@ -1,9 +1,26 @@
-# personal-site
+# Adam Pangelinan's Personal Site
 
-so theres:
-    home page///
-    about page///
-    now page///
-    portfolio page
-    blog page///
-    contact page
+This repository contains the code for my personal website. The website is made up of six main pages: Home, About, Now, Portfolio, Blog, and Contact.
+
+## Pages
+
+- **Home**: The homepage introduces visitors to the site. It contains a brief introduction and provides links to the other pages on the site.
+
+- **About**: The about page gives more detailed information about me, including my professional background and personal interests.
+
+- **Now**: The now page provides an update on what I'm currently doing or working on.
+
+- **Portfolio**: The portfolio page showcases my skills and the projects I've worked on.
+
+- **Blog**: The blog page contains my thoughts and essays on various topics.
+
+- **Contact**: The contact page provides ways for visitors to get in touch with me, including links to my email and social media profiles.
+
+## Built With
+
+- HTML
+- CSS
+
+## Author
+
+- Adam Pangelinan
