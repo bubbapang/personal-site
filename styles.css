@@ -21,13 +21,13 @@ a:visited, a:link {
 
 img {
     border-radius: 50%;
-    width: 30vh;  /* This will make the image 1.5 times bigger */
+    width: 30vh;
     height: auto;
 }
 
 nav {
     background: #333;
-    height: 100vh;
+    height: 100%;
     width: 200px;
     position: fixed;
     left: 0;
@@ -53,5 +53,5 @@ nav ul li a {
 }
 
 main {
-    margin-left: 270px;  /* Adjust this value to create enough space for the nav bar */
+    margin-left: 250px;
 }
