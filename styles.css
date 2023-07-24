@@ -1,29 +1,21 @@
 body {
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
     background-color: #1a1a1a;
     color: #ffffff;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-size: 1.5em;  /* This will make the text 1.5 times bigger */
+    flex-direction: row;
+    font-size: 1.4em;
 }
 
 h1, h2, h3 {
     color: #ffffff;
 }
 
-main {
-    padding: 20px;
-}
-
 section {
     margin-bottom: 20px;
 }
 
-a:visited {
+a:visited, a:link {
     color: inherit;
 }
 
@@ -31,4 +23,35 @@ img {
     border-radius: 50%;
     width: 30vh;  /* This will make the image 1.5 times bigger */
     height: auto;
+}
+
+nav {
+    background: #333;
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin-left: 270px;  /* Adjust this value to create enough space for the nav bar */
 }
