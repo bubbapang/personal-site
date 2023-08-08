@@ -1,0 +1,47 @@
+				<h3>Quotes:</h3>
+				<ul>
+					<li>The obstacle is the way</li>
+					<li>Every obstacle is an opportunity for virtue</li>
+					<li>Do it badly on purpose to get started</li>
+					<li>Sleep is the best, free neuro-practice out there</li>
+					<li>To whom much is given, much is expected</li>
+				</ul>
+
+				<h3>Questions:</h3>
+				<ul>
+					<li>Why am I doing this?</li>
+					<li>What would this look like if it were easy? - Tim Ferriss</li>
+					<li>What if its easy?</li>
+					<li>What's the fastest way to do this?</li>
+					<li>What would it take for me to be satisfied?</li>
+					<li>What is the 90/10 solution?</li>
+					<li>Let's say the worst case happened, then what?</li>
+					<li>Let's say the best case happened, then what?</li>
+					<li>Which one of these is most influential to the others?</li>
+					<li>What's the problem?</li>
+					<li>What is the cost of inaction, the cost of the status quo? - Tim Ferriss</li>
+					<li>If x were to fail, what would be the causes?</li>
+					<li>What does heaven look like?</li>
+					<li>What does hell look like?</li>
+				</ul>
+
+                
+				<h3>YouTube:</h3>
+				<ul>
+					<li>Crash Course Philosophy</li>
+					<li>The Economic Machine - Ray Dalio</li>
+					<li>How to get rich without getting lucky - Naval Ravikant</li>
+				</ul>
+
+				<h3>Films:</h3>
+				<ul>
+					<li>Her</li>
+					<li>12 Angry Men</li>
+					<li>The Lord of the rings trilogy</li>
+					<li>Portrait of a Lady on Fire</li>
+				</ul>
+
+				<h3>Games</h3>
+				<ul>
+					<li>Minecraft</li>
+				</ul>

@@ -15,6 +15,10 @@ section {
     margin-bottom: 20px;
 }
 
+section h3 {
+    margin-top: 100px;
+}
+
 a:visited, a:link {
     color: inherit;
 }
@@ -54,4 +58,8 @@ nav ul li a {
 
 main {
     margin-left: 250px;
+}
+
+ul li {
+    margin-bottom: 30px;
 }
