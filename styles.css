@@ -68,3 +68,8 @@ main {
 ul li {
     margin-bottom: 30px;
 }
+
+p {
+    /* i want more spacing between p lines */
+    line-height: 3em;
+}

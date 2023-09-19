@@ -1,6 +1,6 @@
 # Adam Pangelinan's Personal Site
 
-This repository contains the code for my personal website. The website is made up of six main pages: Home, About, Now, Portfolio, Blog, and Contact.
+This repository contains the code for my personal website. The website is made up of six main pages: Home, About, Now, Portfolio, Essays, and Contact.
 
 ## Pages
 
@@ -12,7 +12,7 @@ This repository contains the code for my personal website. The website is made u
 
 - **Portfolio**: The portfolio page showcases my skills and the projects I've worked on.
 
-- **Blog**: The blog page contains my thoughts and essays on various topics.
+- **Essays**: The Essays page contains my thoughts and essays on various topics.
 
 - **Contact**: The contact page provides ways for visitors to get in touch with me, including links to my email and social media profiles.
 
