@@ -2,14 +2,29 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="Adam Pangelinan Index" />
 		<title>Adam Pangelinan</title>
 		<link rel="stylesheet" href="styles.css" />
-		<link rel="icon" href="assets/kabuki-pic.png" type="image/x-icon" />
 	</head>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var menuButton = document.getElementById("menu-toggle");
+			var navigation = document.querySelector("nav");
+
+			menuButton.addEventListener("click", function () {
+				// Check if nav is open
+				if (navigation.style.left === "0px") {
+					navigation.style.left = "-100%"; // Hide nav
+				} else {
+					navigation.style.left = "0px"; // Show nav
+				}
+			});
+		});
+	</script>
 	<body>
-		<header>
+		<button id="menu-toggle" aria-label="Open navigation">Menu</button>
+		<header class="site-header">
 			<nav>
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -17,7 +32,6 @@
 					<li><a href="now.html">Now</a></li>
 					<li><a href="portfolio.html">Portfolio</a></li>
 					<li><a href="curation.html">Curation</a></li>
-					<li><a href="essays.html">Essays</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
@@ -27,21 +41,33 @@
 			<section>
 				<img
 					class="profile-pic"
-					src="assets/starfish-enhanced.png"
+					src="assets/merlion.png"
 					alt="Adam Pangelinan"
 				/>
 
-				<h3>~ Me in 30 seconds: <a href="about.html">See my about page.</a></h3>
+				<h3>
+					~ Me in 30 seconds:
+					<a href="about.html">See my about page.</a>
+				</h3>
 
-				<h3>~ What I'm doing: <a href="now.html">See my now page.</a></h3>
+				<h3>
+					~ What I'm doing: <a href="now.html">See my now page.</a>
+				</h3>
 
-				<h3>~ What I've built: <a href="portfolio.html">See my portfolio page.</a></h3>
+				<h3>
+					~ What I've built:
+					<a href="portfolio.html">See my portfolio page.</a>
+				</h3>
 
-				<h3>~ What I've curated: <a href="curation.html">See my curation page.</a></h3>
+				<h3>
+					~ What I've curated:
+					<a href="curation.html">See my curation page.</a>
+				</h3>
 
-				<h3>~ What I've written: <a href="essays.html">See my Essays page.</a></h3>
-
-				<h3>~ Ways to contact: <a href="contact.html">See my contact page.</a></h3>
+				<h3>
+					~ Ways to contact:
+					<a href="contact.html">See my contact page.</a>
+				</h3>
 			</section>
 		</main>
 	</body>

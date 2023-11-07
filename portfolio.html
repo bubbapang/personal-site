@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Adam Pangelinan Portfolio">
-    <title>Adam Pangelinan</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="assets/kabuki-pic.png" type="image/x-icon">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="now.html">Now</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="curation.html">Curation</a></li>
-                <li><a href="essays.html">Essays</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>PORTFOLIO.</h1>
-        <section>
-            <p><a href="https://adam-pangelinan-resume.tiiny.site/" target="_blank" rel="noopener noreferrer">See my resume</a></p>
-        </section>
-    </main>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Adam Pangelinan Portfolio" />
+		<title>Adam Pangelinan</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var menuButton = document.getElementById("menu-toggle");
+            var navigation = document.querySelector("nav");
+
+            menuButton.addEventListener("click", function () {
+                // Check if nav is open
+                if (navigation.style.left === "0px") {
+                    navigation.style.left = "-100%"; // Hide nav
+                } else {
+                    navigation.style.left = "0px"; // Show nav
+                }
+            });
+        });
+    </script>
+	<body>
+        <button id="menu-toggle" aria-label="Open navigation">Menu</button>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="now.html">Now</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="curation.html">Curation</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>PORTFOLIO.</h1>
+			<section>
+				<p>
+					<a
+						href="https://adam-pangelinan-resume.tiiny.site/"
+						target="_blank"
+						rel="noopener noreferrer"
+						>See my resume</a
+					>
+				</p>
+			</section>
+		</main>
+	</body>
 </html>

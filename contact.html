@@ -1,51 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Adam Pangelinan Content">
-    <title>Adam Pangelinan</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="assets/kabuki-pic.png" type="image/x-icon">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Adam Pangelinan Content" />
+		<title>Adam Pangelinan</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var menuButton = document.getElementById("menu-toggle");
+            var navigation = document.querySelector("nav");
 
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="now.html">Now</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="curation.html">Curation</a></li>
-                <li><a href="essays.html">Essays</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>CONTACT.</h1>
-        <section>
+            menuButton.addEventListener("click", function () {
+                // Check if nav is open
+                if (navigation.style.left === "0px") {
+                    navigation.style.left = "-100%"; // Hide nav
+                } else {
+                    navigation.style.left = "0px"; // Show nav
+                }
+            });
+        });
+    </script>
+	<body>
+        <button id="menu-toggle" aria-label="Open navigation">Menu</button>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="now.html">Now</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="curation.html">Curation</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>CONTACT.</h1>
+			<section>
+				<h3>
+					~
+					<a href="mailto:adamtpangelinan@gmail.com"
+						>adamtpangelinan@gmail.com</a
+					>
+					(I reply to everyone)
+				</h3>
 
-            <h3>~ <a href="mailto:adamtpangelinan@gmail.com">adamtpangelinan@gmail.com</a> (I reply to everyone)</h3>
+				<h3>~ +1(671)686-2020 / +1(530)364-7565 (for whatsapp)</h3>
 
-            <h3>~ +1(671)686-2020 / +1(530)364-7565 (for whatsapp)</h3>
+				<h3>
+					~
+					<a
+						href="https://www.linkedin.com/in/adam-pangelinan-8695a0159/"
+						target="_blank"
+						rel="noopener noreferrer"
+						>LinkedIn</a
+					>
+				</h3>
 
-            <h3>~ <a href="https://www.linkedin.com/in/adam-pangelinan-8695a0159/" target="_blank" rel="noopener noreferrer">LinkedIn</a></h3>
+				<h3>
+					~
+					<a
+						href="https://github.com/bubbapang"
+						target="_blank"
+						rel="noopener noreferrer"
+						>GitHub</a
+					>
+				</h3>
 
-            <h3>~ <a href="https://github.com/bubbapang" target="_blank" rel="noopener noreferrer">GitHub</a></h3>
+				<h3>
+					~
+					<a
+						href="https://twitter.com/adamtpang"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Twitter</a
+					>
+				</h3>
 
-            <h3>~ <a href="https://twitter.com/adamtpang" target="_blank" rel="noopener noreferrer">Twitter</a></h3>
+				<h3>
+					~
+					<a
+						href="https://wellfound.com/u/adam-pangelinan"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Angel List</a
+					>
+				</h3>
 
-            <h3>~ <a href="https://wellfound.com/u/adam-pangelinan" target="_blank" rel="noopener noreferrer">Wellfound / Angel List</a></h3>
-
-            <h3>~ Calendly >>></h3>
-            <!-- Calendly inline widget begin -->
-            <div class="calendly-inline-widget" data-url="https://calendly.com/adampangelinan" style="min-width:320px;height:700px;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-            <!-- Calendly inline widget end -->
-
-        </section>
-    </main>
-</body>
+				<h3>~ Calendly >>></h3>
+				<!-- Calendly inline widget begin -->
+				<div
+					class="calendly-inline-widget"
+					data-url="https://calendly.com/adampangelinan"
+					style="min-width: 320px; height: 700px"
+				></div>
+				<script
+					type="text/javascript"
+					src="https://assets.calendly.com/assets/external/widget.js"
+					async
+				></script>
+				<!-- Calendly inline widget end -->
+			</section>
+		</main>
+	</body>
 </html>

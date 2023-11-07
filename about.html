@@ -2,13 +2,28 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="Adam Pangelinan About" />
 		<title>Adam Pangelinan</title>
 		<link rel="stylesheet" href="styles.css" />
-		<link rel="icon" href="assets/kabuki-pic.png" type="image/x-icon" />
 	</head>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var menuButton = document.getElementById("menu-toggle");
+			var navigation = document.querySelector("nav");
+
+			menuButton.addEventListener("click", function () {
+				// Check if nav is open
+				if (navigation.style.left === "0px") {
+					navigation.style.left = "-100%"; // Hide nav
+				} else {
+					navigation.style.left = "0px"; // Show nav
+				}
+			});
+		});
+	</script>
 	<body>
+		<button id="menu-toggle" aria-label="Open navigation">Menu</button>
 		<header>
 			<nav>
 				<ul>
@@ -17,7 +32,6 @@
 					<li><a href="now.html">Now</a></li>
 					<li><a href="portfolio.html">Portfolio</a></li>
 					<li><a href="curation.html">Curation</a></li>
-					<li><a href="essays.html">Essays</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
@@ -26,18 +40,20 @@
 			<h1>ABOUT.</h1>
 			<section>
 				<p>
-					I'm Adam Pangelinan. I write songs, essays, and code.
-					I'm 21 years old, born and raised on Guam, USA. I enjoy
-					philosophy, music, writing, coding, soccer, K-pop, startups,
-					books, and more.
+					I'm Adam Pangelinan. I write songs, essays, and code. I'm 21
+					years old, born and raised on Guam, USA. I enjoy philosophy,
+					music, writing, coding, soccer, K-pop, startups, books, and
+					more.
 				</p>
 
-				<h3>~ My Adult Journey, where I experimented with paths out of
-					high school:</h3>
+				<h3>
+					~ My Adult Journey, where I experimented with paths out of
+					high school:
+				</h3>
 				<ul>
 					<li>
-						Initially decided not to go to college, was
-						influenced by Peter Thiel and
+						Initially decided not to go to college, was influenced
+						by Peter Thiel and
 						<a
 							href="https://www.youtube.com/watch?v=knj9Atxscrc"
 							target="_blank"
@@ -46,25 +62,24 @@
 						>. I wanted to take a gap year so I convinced my
 						parents.
 					</li>
-					<li>
-						Tried producing music.
-					</li>
+					<li>Tried producing music.</li>
 					<li>Basically got my real estate license.</li>
 					<li>
-						Tried college, thinking I could
-						upgrade to a better school quickly.
+						Tried college, thinking I could upgrade to a better
+						school quickly.
 					</li>
 					<li>
 						Learned more about software, dropped out after a
 						semester.
 					</li>
 					<li>
-						Learned programming online (Angela Yu = goat). 
-						Decided with my parents
-						that more learning structure would be good, I researched options.
+						Learned programming online (Angela Yu = goat). Decided
+						with my parents that more learning structure would be
+						good, I researched options.
 					</li>
 					<li>
-						Found App Academy, a coding bootcamp. Applied and got in (5% acceptance).
+						Found App Academy, a coding bootcamp. Applied and got in
+						(5% acceptance).
 					</li>
 					<li>
 						Flew to San Francisco, lived there for 4 months in a
@@ -72,9 +87,9 @@
 						graduated, and flew home.
 					</li>
 					<li>
-						Polished portfolio projects and job
-						materials, which brings us to the present, finishing
-						DS+A studies and looking for a job.
+						Polished portfolio projects and job materials, which
+						brings us to the present, finishing DS+A studies and
+						looking for a job.
 					</li>
 				</ul>
 

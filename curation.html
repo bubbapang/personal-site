@@ -2,13 +2,28 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="Adam Pangelinan Curation" />
 		<title>Adam Pangelinan</title>
 		<link rel="stylesheet" href="styles.css" />
-		<link rel="icon" href="assets/kabuki-pic.png" type="image/x-icon" />
 	</head>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var menuButton = document.getElementById("menu-toggle");
+			var navigation = document.querySelector("nav");
+
+			menuButton.addEventListener("click", function () {
+				// Check if nav is open
+				if (navigation.style.left === "0px") {
+					navigation.style.left = "-100%"; // Hide nav
+				} else {
+					navigation.style.left = "0px"; // Show nav
+				}
+			});
+		});
+	</script>
 	<body>
+		<button id="menu-toggle" aria-label="Open navigation">Menu</button>
 		<header>
 			<nav>
 				<ul>
@@ -17,7 +32,6 @@
 					<li><a href="now.html">Now</a></li>
 					<li><a href="portfolio.html">Portfolio</a></li>
 					<li><a href="curation.html">Curation</a></li>
-					<li><a href="essays.html">Essays</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
@@ -25,56 +39,117 @@
 		<main>
 			<h1>HAND-PICKED GEMS.</h1>
 			<section>
-				
 				<h3>Role Models:</h3>
 				<ul>
-					<li>Tim Ferriss: achieve world class results in record time and become balanced</li>
-					<li>Peter Thiel: think clearly about the philosophy of technology</li>
+					<li>
+						Tim Ferriss: achieve world class results in record time
+						and become balanced
+					</li>
+					<li>
+						Peter Thiel: think clearly about the philosophy of
+						technology
+					</li>
 					<li>John Vervaeke: solve the meaning crisis</li>
 					<li>Derek Sivers: open your mind to the possibilities</li>
-					<li>Visakan Veerasamy: your friendly neighborhood digital older brother (count 4, yes 4 adjectives!)</li>
+					<li>
+						Visakan Veerasamy: your friendly neighborhood digital
+						older brother (count 4, yes 4 adjectives!)
+					</li>
 				</ul>
 
 				<h3>Frameworks:</h3>
 				<ul>
-					<li>4 kinds of luck: Blind, Serendipitous, Detection, Attraction - Naval Ravikant and others</li>
-					<li>4 kinds of knowing: Propositional, Procedural, Perspectival, Participatory - John Vervaeke</li>
-					<li>4 phases of creativity: Seed-collecting phase, Experimentation phase, Shaping phase, Sharing phase - Rick Rubin</li>
+					<li>
+						4 kinds of luck: Blind, Serendipitous, Detection,
+						Attraction - Naval Ravikant and others
+					</li>
+					<li>
+						4 kinds of knowing: Propositional, Procedural,
+						Perspectival, Participatory - John Vervaeke
+					</li>
+					<li>
+						4 phases of creativity: Seed-collecting phase,
+						Experimentation phase, Shaping phase, Sharing phase -
+						Rick Rubin
+					</li>
 					<li>5 tentacles of career: - Tim Urban</li>
-					<img 
+					<img
 						class="curation"
 						src="assets/tim-urban-octopus.png"
 						alt="Tim Urban Octopus"
-					>
+					/>
 				</ul>
 
 				<h3>Music:</h3>
 				<ul>
-					<li>Grew up on Dave Matthews, Jack Johnson, The Beatles, Fleetwood Mac, The Police, Rush, etc.</li>
-					<li>Grew up on pivotal games for my music taste: Guitar Hero, Rock Band, Skate 3, Fight Night Round 3, Fifas 15 through 23 (not 16)</li>
-					<li>Got into K-pop at 17, made a friend through it, and grew really close with my 2 sisters over it</li>
+					<li>
+						Grew up on Dave Matthews, Jack Johnson, The Beatles,
+						Fleetwood Mac, The Police, Rush, etc.
+					</li>
+					<li>
+						Grew up on pivotal games for my music taste: Guitar
+						Hero, Rock Band, Skate 3, Fight Night Round 3, Fifas 15
+						through 23 (not 16)
+					</li>
+					<li>
+						Got into K-pop at 17, made a friend through it, and grew
+						really close with my 2 sisters over it
+					</li>
 				</ul>
-				<a href="https://stats.fm/adampangelinan" target="_blank" rel="noopener noreferrer">Spotify Stats</a>
-				<br>
-				<a href="soundcloud.com/adam-pangelinan-616223706" target="_blank" rel="noopener noreferrer">Soundcloud</a>
+				<a
+					href="https://stats.fm/adampangelinan"
+					target="_blank"
+					rel="noopener noreferrer"
+					>Spotify Stats</a
+				>
+				<br />
+				<a
+					href="soundcloud.com/adam-pangelinan-616223706"
+					target="_blank"
+					rel="noopener noreferrer"
+					>Soundcloud</a
+				>
 
 				<h3>Currently reading:</h3>
 				<ul>
-					<li>Friendly, Ambitious, Nerd v1.0 - Visakan Veerasamy </li>
-					<li>The Startup of You: Adapt, Take Risks, Grow Your Network, and Transform Your Career - Reid Hoffman, Ben Casnocha</li>
+					<li>Friendly, Ambitious, Nerd v1.0 - Visakan Veerasamy</li>
+					<li>
+						The Startup of You: Adapt, Take Risks, Grow Your
+						Network, and Transform Your Career - Reid Hoffman, Ben
+						Casnocha
+					</li>
 				</ul>
 
 				<h3>Past Books:</h3>
 				<ul>
-					<li>(7) Zero to One: Notes on Startups, or How to Build the Future - Peter Thiel, Blake Masters</li>
-					<li>(5) Anything You Want: 40 Lessons for a New Kind of Entrepreneur - Derek Sivers</li>
-					<li>(4) Tribe of Mentors: Short Life Advice from the Best in the World - Tim Ferriss</li>
-					<li>(3) The 4-Hour Workweek: Escape 9-5, Live Anywhere, and Join the New Rich (Expanded and Updated) - Tim Ferriss</li>
+					<li>
+						(7) Zero to One: Notes on Startups, or How to Build the
+						Future - Peter Thiel, Blake Masters
+					</li>
+					<li>
+						(5) Anything You Want: 40 Lessons for a New Kind of
+						Entrepreneur - Derek Sivers
+					</li>
+					<li>
+						(4) Tribe of Mentors: Short Life Advice from the Best in
+						the World - Tim Ferriss
+					</li>
+					<li>
+						(3) The 4-Hour Workweek: Escape 9-5, Live Anywhere, and
+						Join the New Rich (Expanded and Updated) - Tim Ferriss
+					</li>
 					<li>(2) The Creative Act: A Way of Being - Rick Rubin</li>
-					<li>(2) Tao Te Ching: A New English Version - Stephen Mitchell, Lao Tzu</li>
-					<li>(1) The 4-Hour Body: An Uncommon Guide to Rapid Fat-Loss, Incredible Sex, and Becoming Superhuman - Tim Ferriss</li>
+					<li>
+						(2) Tao Te Ching: A New English Version - Stephen
+						Mitchell, Lao Tzu
+					</li>
+					<li>
+						(1) The 4-Hour Body: An Uncommon Guide to Rapid
+						Fat-Loss, Incredible Sex, and Becoming Superhuman - Tim
+						Ferriss
+					</li>
 				</ul>
-			</section>  
+			</section>
 		</main>
 	</body>
 </html>
