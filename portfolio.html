@@ -6,24 +6,25 @@
 		<meta name="description" content="Adam Pangelinan Portfolio" />
 		<title>Adam Pangelinan</title>
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="icon" type="image/jpeg" href="assets/redsquare16.jpeg" />
 	</head>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var menuButton = document.getElementById("menu-toggle");
-            var navigation = document.querySelector("nav");
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var menuButton = document.getElementById("menu-toggle");
+			var navigation = document.querySelector("nav");
 
-            menuButton.addEventListener("click", function () {
-                // Check if nav is open
-                if (navigation.style.left === "0px") {
-                    navigation.style.left = "-100%"; // Hide nav
-                } else {
-                    navigation.style.left = "0px"; // Show nav
-                }
-            });
-        });
-    </script>
+			menuButton.addEventListener("click", function () {
+				// Check if nav is open
+				if (navigation.style.left === "0px") {
+					navigation.style.left = "-100%"; // Hide nav
+				} else {
+					navigation.style.left = "0px"; // Show nav
+				}
+			});
+		});
+	</script>
 	<body>
-        <button id="menu-toggle" aria-label="Open navigation">Menu</button>
+		<button id="menu-toggle" aria-label="Open navigation">Menu</button>
 		<header>
 			<nav>
 				<ul>
@@ -38,15 +39,40 @@
 		</header>
 		<main>
 			<h1>PORTFOLIO.</h1>
+			<!-- seperate by code, music, etc. -->
 			<section>
-				<p>
+				<h3>
 					<a
 						href="https://adam-pangelinan-resume.tiiny.site/"
 						target="_blank"
 						rel="noopener noreferrer"
-						>See my resume</a
+						>Resume</a
 					>
-				</p>
+				</h3>
+				<h3>
+					<a
+						href="https://github.com/bubbapang"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Code</a
+					>
+				</h3>
+				<h3>
+					<a
+						href="https://soundcloud.com/adam-pangelinan-616223706"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Music</a
+					>
+				</h3>
+				<h3>
+					<a
+						href="https://twitter.com/adamtpang"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Writing</a
+					>
+				</h3>
 			</section>
 		</main>
 	</body>
