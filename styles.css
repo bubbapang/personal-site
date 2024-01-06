@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
 body {
 	font-family: "Open Sans", Arial, Helvetica, sans-serif;
 	background-color: #fdffc7;
@@ -36,7 +38,6 @@ section {
 	color: #000000;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 .grid-container {
 	font-family: "Montserrat", sans-serif;
 	font-size: 25px;
@@ -50,12 +51,20 @@ section {
 }
 
 .grid-item {
-	min-width: 100px;
-	min-height: 100px;
+    min-width: 100px;
+    min-height: 100px;
 	background-color: lightgray;
 	padding: 10px; /* 20% smaller than 20px */
 	text-align: center;
 	border-radius: 8px;
+    transition: transform 0.3s ease; /* Transition only the transform property */
+	cursor: pointer;
+
+}
+
+.grid-item:hover {
+    transform: scale(1.1); /* Scale up the item */
+    z-index: 10; /* Keep this if you want the item to overlay others on hover */
 }
 
 /*
@@ -66,117 +75,118 @@ f26430
 2a2d34
 */
 
-/* Custom sizes and positions for each item */
 .item1 {
 	grid-column: span 4;
 	grid-row: span 2;
-	background-color: #10b2c0;
-	color: #FFFFFF;
-} /* Spans 3 columns */
+	background-color: #8ecae6;
+	color: #000000;
+}
 .item2 {
 	grid-column: span 2;
 	grid-row: span 2;
-	background-color: #8980f5;
+	background-color: #219ebc;
 	color: #FFFFFF;
-} /* Spans 1 column */
+}
 .item3 {
 	grid-column: span 2;
 	grid-row: span 2;
-	background-color: #e85d75;
+	background-color: #126782;
 	color: #FFFFFF;
-} /* Spans 1 colum */
+}
 .item4 {
 	grid-column: span 1;
 	grid-row: span 1;
-	background-color: #272727;
+	background-color: #023047;
 	color: #FFFFFF;
-} /* Spans 1 column */
+} 
 .item5 {
 	grid-column: span 3;
 	grid-row: span 2;
-	background-color: #66df6c;
+	background-color: #ffb703;
 	color: #FFFFFF;
-} /* Spans 2 columns */
+}
 .item6 {
 	grid-column: span 1;
 	grid-row: span 1;
-	background-color: #033f63;
+	background-color: #fd9e02;
 	color: #FFFFFF;
-} /* Spans 1 column */
+} 
 .item7 {
 	grid-column: span 3;
 	grid-row: span 2;
-	background-color: #28666e;
+	background-color: #fb8500;
 	color: #FFFFFF;
-} /* Spans 1 column */
+} 
 .item8 {
 	grid-column: span 3;
 	grid-row: span 2;
-	background-color: #53d8fb;
+	background-color: #2f3e46;
 	color: #FFFFFF;
-} /* Spans 1 column */
+} 
 .item9 {
 	grid-column: span 2;
 	grid-row: span 2;
-	background-color: #fe64a3;
+	background-color: #354f52;
 	color: #FFFFFF;
-} /* Spans 1 column */
+} 
 .item10 {
 	grid-column: span 4;
 	grid-row: span 2;
-	background-color: #FF7674;
+	background-color: #52796f;
 	color: #FFFFFF;
-} /* Spans 1 column */
+} 
 .item11 {
 	grid-column: span 1;
-	background-color: #fcecc9;
+	background-color: #84a98c;
 	color: #FFFFFF;
-} /* Spans 1 column */
+} 
 .item12 {
 	grid-column: span 1;
-	background-color: #7eb2dd;
+	background-color: #cad2c5;
 	color: #FFFFFF;
-} /* Spans 1 column */
+} 
 .item13 {
 	grid-column: span 1;
-	background-color: #445e93;
+	background-color: #590d22;
 	color: #FFFFFF;
-} /* Spans 1 column */
+} 
 .item14 {
 	grid-column: span 1;
-	background-color: #ff9b42;
+	background-color: #800f2f;
 	color: #FFFFFF;
-} /* Spans 1 column */
+} 
 .item15 {
 	grid-column: span 1;
-	background-color: #157a6e;
+	background-color: #a4133c;
 	color: #FFFFFF;
-} /* Spans 1 column */
+} 
 .item16 {
 	grid-column: span 1;
-	background-color: #499f68;
+	background-color: #c9184a;
 	color: #FFFFFF;
-} /* Spans 1 column */
+	font-size: 20px;
+} 
 .item17 {
 	grid-column: span 1;
-	background-color: #77b28c;
-	color: #FFFFFF;
-} /* Spans 1 column */
+	background-color: #ff4d6d;
+	color: #ffffff;
+} 
 .item18 {
 	grid-column: span 1;
-	background-color: #b2abbf;
-	color: #FFFFFF;
-} /* Spans 1 column */
+	background-color: #ff758f;
+	color: #000000;
+	font-size: 19px;
+} 
 .item19 {
 	grid-column: span 1;
-	background-color: #b1b5c8;
-	color: #FFFFFF;
-} /* Spans 1 column */
+	background-color: #ff8fa3;
+	color: #000000;
+} 
 .item20 {
 	grid-column: span 1;
-	background-color: #bfd5e2;
-	color: #FFFFFF;
-} /* Spans 1 column */
+	background-color: #ffb3c1;
+	color: #000000;
+} 
 
 /* Responsive Design */
 @media (min-width: 768px) {
