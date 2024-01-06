@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Adam Pangelinan Story" />
+		<title>Adam Pangelinan</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="icon" type="image/jpeg" href="assets/fire.png" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+	</head>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var menuButton = document.getElementById("menu-toggle");
+			var navigation = document.querySelector("nav");
+
+			menuButton.addEventListener("click", function () {
+				// Check if nav is open
+				if (navigation.style.left === "0px") {
+					navigation.style.left = "-100%"; // Hide nav
+				} else {
+					navigation.style.left = "0px"; // Show nav
+				}
+			});
+		});
+	</script>
+	<body class="content-wrapper">
+		<button id="menu-toggle" aria-label="Open navigation">Menu</button>
+		<main>
+			<h1>STORY.</h1>
+			<p>1: Born in Guam.</p>
+			<p>2: Had <a href="https://en.wikipedia.org/wiki/Cartesian_doubt"target="_blank" rel="noopener noreferrer">Cartesian doubt</a>, finds <a href="https://www.youtube.com/watch?v=BNYJQaZUDrI&list=PL8dPuuaLjXtNgK6MZucdYldNkMybYIHKR" target="_blank" rel="noopener noreferrer">philosophy</a>.</p>
+			<p>3: Wants to attend online school to escape BS faster.</p>
+			<p>4: Starts the "Dead Philosophers' Society".</p>
+			<p>5. Hit 17 and felt mortality for the first time.</p>
+			<p>5: Covid, decides on <a href="https://www.youtube.com/watch?v=knj9Atxscrc" target="_blank" rel="noopener noreferrer">gap year</a>.</p>
+			<p>6: Produces <a href="http://localhost:5500/soundcloud.com/adam-pangelinan-616223706"target="_blank" rel="noopener noreferrer">music</a>, works at <a href="https://www.idiguam.com/"target="_blank" rel="noopener noreferrer">family business</a>, passes real estate exam.</p>
+			<p>7: <a href="https://www.udemy.com/course/100-days-of-code/"target="_blank" rel="noopener noreferrer">Learns to code</a>.</p>
+			<p>8: Attends <a href="https://www.appacademy.io/"target="_blank" rel="noopener noreferrer">coding bootcamp</a> in San Francisco.</p>
+			<p>9: Soul searches, finds more of his <a href="https://visakanv.gumroad.com/l/FANbook"target="_blank" rel="noopener noreferrer">tribe</a>, and keeps <a href="portfolio.html">creating</a>.</a></p>
+			<p><a href="now.html">now.</p>
+		</main>
+	</body>
+</html>

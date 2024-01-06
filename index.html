@@ -1,78 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="Adam Pangelinan Index" />
-		<title>Adam Pangelinan</title>
-		<link rel="stylesheet" href="styles.css" />
-		<link rel="icon" type="image/jpeg" href="assets/redsquare16.jpeg" />
-	</head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Adam Pangelinan's Personal Homepage" />
+    <title>Adam Pangelinan</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="test.css" />
+    <link rel="icon" type="image/jpeg" href="assets/fire.png" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+	<script src="palette.js"></script>
+</head>
 
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			var menuButton = document.getElementById("menu-toggle");
-			var navigation = document.querySelector("nav");
+<body class="content-wrapper bg-neutral-200 text-neutral-900">
 
-			menuButton.addEventListener("click", function () {
-				// Check if nav is open
-				if (navigation.style.left === "0px") {
-					navigation.style.left = "-100%"; // Hide nav
-				} else {
-					navigation.style.left = "0px"; // Show nav
-				}
-			});
-		});
-	</script>
-	<body>
-		<button id="menu-toggle" aria-label="Open navigation">Menu</button>
-		<header class="site-header">
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="now.html">Now</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="curation.html">Curation</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
+    <main>	
+
 		<main>
-			<h1>ADAM PANGELINAN.</h1>
-			<section>
-				<img
-					src="assets/merlion.png"
-					alt="Adam Pangelinan"
-					class="profile-pic"
-				/>
-				<h3>
-					Me in 20 seconds:
-					<a href="about.html">See my about page.</a>
-				</h3>
-
-				<h3>What I'm doing: <a href="now.html">See my now page.</a></h3>
-
-				<h3>
-					What I've built:
-					<a
-						href="portfolio.html"
-						target="_blank"
-						rel="noopener noreferrer"
-						>See my portfolio page.</a
-					>
-				</h3>
-
-				<h3>
-					What I've curated:
-					<a href="curation.html">See my curation page.</a>
-				</h3>
-
-				<h3>
-					Ways to contact:
-					<a href="contact.html">See my contact page.</a>
-				</h3>
-			</section>
+			<div class="grid-container">
+				<div class="grid-item item1 about">minimal paragraph</div>
+				<div class="grid-item item2 about">now page</div>
+				<div class="grid-item item3 about">life chapters bullet points</div>
+				<div class="grid-item item4 about">resume</div>
+				<div class="grid-item item5 curations">hero profiles</div>
+				<div class="grid-item item6 curations">bookshelf</div>
+				<div class="grid-item item7 curations">song reviews + spotistats</div>
+				<div class="grid-item item8 creations">soundcloud</div>
+				<div class="grid-item item9 creations">github</div>
+				<div class="grid-item item10 creations">essays</div>
+				<div class="grid-item item11 creations">project showcase</div>
+				<div class="grid-item item12 creations">project voting</div>
+				<div class="grid-item item13 contact">discord</div>
+				<div class="grid-item item14 contact">whatsapp</div>
+				<div class="grid-item item15 contact">twitter</div>
+				<div class="grid-item item16 contact">email</div>
+				<div class="grid-item item17 contact">phone #</div>
+				<div class="grid-item item18 contact">calendly</div>
+				<div class="grid-item item19 contact">linkedin</div>
+				<div class="grid-item item20">key</div>
+			</div>
 		</main>
-	</body>
+
+    </main>
+    <!-- Additional scripts can be added here -->
+</body>
 </html>
