@@ -25,143 +25,143 @@
 		<main class="grid-container">
 			<div
 				class="grid-item"
-				data-size="1"
+				data-size="2"
 				style="background-color: #ff6666"
 			>
-				1
+				minimal paragraph
 			</div>
 			<div
 				class="grid-item"
-				data-size="2"
+				data-size="3"
 				style="background-color: #ff8c66"
 			>
-				2
+				now page
 			</div>
 			<div
 				class="grid-item"
 				data-size="3"
 				style="background-color: #ffad66"
 			>
-				3
+				bullet point public autobio
 			</div>
 			<div
 				class="grid-item"
 				data-size="4"
 				style="background-color: #ffcc66"
 			>
-				4
+				resume
 			</div>
 			<div
 				class="grid-item"
-				data-size="5"
+				data-size="4"
 				style="background-color: #ffff66"
 			>
-				5
+				hero profiles
 			</div>
 			<div
 				class="grid-item"
-				data-size="1"
+				data-size="3"
 				style="background-color: #ccff66"
 			>
-				6
+				bookshelf
 			</div>
 			<div
 				class="grid-item"
 				data-size="2"
 				style="background-color: #99ff66"
 			>
-				7
+				song reviews + spotistats
 			</div>
 			<div
 				class="grid-item"
 				data-size="3"
 				style="background-color: #66ff66"
 			>
-				8
+				soundcloud
 			</div>
 			<div
 				class="grid-item"
 				data-size="4"
 				style="background-color: #66ff99"
 			>
-				9
-			</div>
-			<div
-				class="grid-item"
-				data-size="5"
-				style="background-color: #66ffcc"
-			>
-				10
-			</div>
-			<div
-				class="grid-item"
-				data-size="1"
-				style="background-color: #66ffff"
-			>
-				11
-			</div>
-			<div
-				class="grid-item"
-				data-size="2"
-				style="background-color: #66ccff"
-			>
-				12
-			</div>
-			<div
-				class="grid-item"
-				data-size="3"
-				style="background-color: #6699ff"
-			>
-				13
+				github
 			</div>
 			<div
 				class="grid-item"
 				data-size="4"
+				style="background-color: #66ffcc"
+			>
+				essays
+			</div>
+			<div
+				class="grid-item"
+				data-size="4"
+				style="background-color: #66ffff"
+			>
+				project showcase
+			</div>
+			<div
+				class="grid-item"
+				data-size="3"
+				style="background-color: #66ccff"
+			>
+				project voting
+			</div>
+			<div
+				class="grid-item"
+				data-size="2"
+				style="background-color: #6699ff"
+			>
+				discord chat
+			</div>
+			<div
+				class="grid-item"
+				data-size="3"
 				style="background-color: #6666ff"
 			>
-				14
+				whatsapp chat
 			</div>
 			<div
 				class="grid-item"
 				data-size="5"
 				style="background-color: #9966ff"
 			>
-				15
+				twitter
 			</div>
 			<div
 				class="grid-item"
-				data-size="1"
+				data-size="4"
 				style="background-color: #cc66ff"
 			>
-				16
+				email
 			</div>
 			<div
 				class="grid-item"
 				data-size="2"
 				style="background-color: #ff66ff"
 			>
-				17
-			</div>
-			<div
-				class="grid-item"
-				data-size="3"
-				style="background-color: #ff66cc"
-			>
-				18
-			</div>
-			<div
-				class="grid-item"
-				data-size="4"
-				style="background-color: #ff6699"
-			>
-				19
+				phone #
 			</div>
 			<div
 				class="grid-item"
 				data-size="5"
+				style="background-color: #ff66cc"
+			>
+				calendly
+			</div>
+			<div
+				class="grid-item"
+				data-size="2"
+				style="background-color: #ff6699"
+			>
+				linkedin
+			</div>
+			<div
+				class="grid-item"
+				data-size="1"
 				style="background-color: #3399ff"
 			>
-				20
+				filler
 			</div>
 		</main>
 
@@ -193,26 +193,26 @@
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {
 				const colors = [
-					"#FFCDD2",
-					"#F8BBD0",
-					"#E1BEE7",
-					"#D1C4E9",
-					"#C5CAE9",
-					"#BBDEFB",
-					"#B3E5FC",
-					"#B2EBF2",
-					"#B2DFDB",
-					"#C8E6C9",
-					"#DCEDC8",
-					"#F0F4C3",
-					"#FFF9C4",
-					"#FFECB3",
-					"#FFE0B2",
-					"#FFCCBC",
-					"#D7CCC8",
-					"#F5F5F5",
-					"#CFD8DC",
-					"#FFAB91",
+					"#8ecae6",
+					"#219ebc",
+					"#126782",
+					"#023047",
+					"#ffb703",
+					"#fd9e02",
+					"#fb8500",
+					"#2f3e46",
+					"#354f52",
+					"#52796f",
+					"#84a98c",
+					"#cad2c5",
+					"#ffb3c1",
+					"#ff8fa3",
+					"#ff758f",
+					"#ff4d6d",
+					"#c9184a",
+					"#a4133c",
+					"#800f2f",
+					"#590d22",
 				];
 
 				document
@@ -221,21 +221,33 @@
 						// Cycle through colors array for each item
 						const colorIndex = index % colors.length;
 						item.style.backgroundColor = colors[colorIndex];
-						item.style.color = "#333"; // Ensuring text color is also set if needed
+					});
+			});
+			document.addEventListener("DOMContentLoaded", function () {
+				document
+					.querySelectorAll(".grid-item")
+					.forEach(function (item) {
+						// Get the background color of the item
+						var bgColor =
+							window.getComputedStyle(item).backgroundColor;
+
+						// Convert background color to YIQ spectrum (to determine brightness)
+						var rgb = bgColor
+							.replace(
+								/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/,
+								"$1 $2 $3"
+							)
+							.split(" ");
+						var yiq =
+							(parseInt(rgb[0]) * 299 +
+								parseInt(rgb[1]) * 587 +
+								parseInt(rgb[2]) * 114) /
+							1000;
+
+						// Set text color based on background color brightness
+						item.style.color = yiq >= 128 ? "black" : "white";
 					});
 			});
 		</script>
-		<!-- grid item size -->
-		<!-- <script>
-			document.addEventListener("DOMContentLoaded", function () {
-				document.querySelectorAll(".grid-item").forEach((item) => {
-					const size = item.getAttribute("data-size");
-					const baseSize = 15; // Base size in vh as defined in your CSS
-					const newSize = baseSize + (size - 1) * 2.5; // Calculate new size
-					item.style.height = `${newSize}vh`;
-					item.style.width = `${newSize}vh`;
-				});
-			});
-		</script> -->
 	</body>
 </html>

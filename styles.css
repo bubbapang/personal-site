@@ -1,5 +1,5 @@
 :root {
-	--base-size: 15vh; /* Base size for the smallest button */
+	--base-size: 10vh; /* Base size for the smallest button */
 }
 
 body,
@@ -39,7 +39,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #333;
+    color: #ffffff;
     font-weight: 700;
     font-size: 1.2em;
     text-align: center;
@@ -48,7 +48,7 @@ html {
     cursor: pointer;
     background-color: #f0f0f0; /* Neutral background */
     border: 2px solid rgba(255, 255, 255, 0.8); /* Soft border */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(82, 82, 82, 0.8);
 }
 
 /* Styles for odd numbered grid items */
@@ -115,7 +115,7 @@ html {
 	.grid-item[data-size="3"],
 	.grid-item[data-size="4"],
 	.grid-item[data-size="5"] {
-		max-height: 20vh; /* Allow bigger sizes if needed, or adjust as suitable */
-		max-width: 20vh;
+		max-height: 30vh; /* Allow bigger sizes if needed, or adjust as suitable */
+		max-width: 30vh;
 	}
 }
