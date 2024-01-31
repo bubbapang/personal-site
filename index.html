@@ -15,40 +15,165 @@
 		id="your-element-selector"
 		style="
 			width: 100vw;
-			height: 100vh;
 			margin: 0;
 			padding: 0;
-			overflow: hidden;
 			font-family: 'Open Sans', sans-serif;
 		"
 	>
+		<div id="vanta-container"></div>
+
 		<main class="grid-container">
-			<div class="grid-item" style="background-color: #ff6666">1</div>
-			<div class="grid-item" style="background-color: #ff8c66">2</div>
-			<div class="grid-item" style="background-color: #ffb366">3</div>
-			<div class="grid-item" style="background-color: #ffd966">4</div>
-			<div class="grid-item" style="background-color: #ffff66">5</div>
-			<div class="grid-item" style="background-color: #d9ff66">6</div>
-			<div class="grid-item" style="background-color: #b3ff66">7</div>
-			<div class="grid-item" style="background-color: #8cff66">8</div>
-			<div class="grid-item" style="background-color: #66ff66">9</div>
-			<div class="grid-item" style="background-color: #66ff8c">10</div>
-			<div class="grid-item" style="background-color: #66ffb3">11</div>
-			<div class="grid-item" style="background-color: #66ffd9">12</div>
-			<div class="grid-item" style="background-color: #66ffff">13</div>
-			<div class="grid-item" style="background-color: #66d9ff">14</div>
-			<div class="grid-item" style="background-color: #66b3ff">15</div>
-			<div class="grid-item" style="background-color: #668cff">16</div>
-			<div class="grid-item" style="background-color: #6666ff">17</div>
-			<div class="grid-item" style="background-color: #8c66ff">18</div>
-			<div class="grid-item" style="background-color: #4db8ff">19</div>
-			<div class="grid-item" style="background-color: #3399ff">20</div>
+			<div
+				class="grid-item"
+				data-size="1"
+				style="background-color: #ff6666"
+			>
+				1
+			</div>
+			<div
+				class="grid-item"
+				data-size="2"
+				style="background-color: #ff8c66"
+			>
+				2
+			</div>
+			<div
+				class="grid-item"
+				data-size="3"
+				style="background-color: #ffad66"
+			>
+				3
+			</div>
+			<div
+				class="grid-item"
+				data-size="4"
+				style="background-color: #ffcc66"
+			>
+				4
+			</div>
+			<div
+				class="grid-item"
+				data-size="5"
+				style="background-color: #ffff66"
+			>
+				5
+			</div>
+			<div
+				class="grid-item"
+				data-size="1"
+				style="background-color: #ccff66"
+			>
+				6
+			</div>
+			<div
+				class="grid-item"
+				data-size="2"
+				style="background-color: #99ff66"
+			>
+				7
+			</div>
+			<div
+				class="grid-item"
+				data-size="3"
+				style="background-color: #66ff66"
+			>
+				8
+			</div>
+			<div
+				class="grid-item"
+				data-size="4"
+				style="background-color: #66ff99"
+			>
+				9
+			</div>
+			<div
+				class="grid-item"
+				data-size="5"
+				style="background-color: #66ffcc"
+			>
+				10
+			</div>
+			<div
+				class="grid-item"
+				data-size="1"
+				style="background-color: #66ffff"
+			>
+				11
+			</div>
+			<div
+				class="grid-item"
+				data-size="2"
+				style="background-color: #66ccff"
+			>
+				12
+			</div>
+			<div
+				class="grid-item"
+				data-size="3"
+				style="background-color: #6699ff"
+			>
+				13
+			</div>
+			<div
+				class="grid-item"
+				data-size="4"
+				style="background-color: #6666ff"
+			>
+				14
+			</div>
+			<div
+				class="grid-item"
+				data-size="5"
+				style="background-color: #9966ff"
+			>
+				15
+			</div>
+			<div
+				class="grid-item"
+				data-size="1"
+				style="background-color: #cc66ff"
+			>
+				16
+			</div>
+			<div
+				class="grid-item"
+				data-size="2"
+				style="background-color: #ff66ff"
+			>
+				17
+			</div>
+			<div
+				class="grid-item"
+				data-size="3"
+				style="background-color: #ff66cc"
+			>
+				18
+			</div>
+			<div
+				class="grid-item"
+				data-size="4"
+				style="background-color: #ff6699"
+			>
+				19
+			</div>
+			<div
+				class="grid-item"
+				data-size="5"
+				style="background-color: #3399ff"
+			>
+				20
+			</div>
 		</main>
 
+		<!-- vanta script -->
 		<script>
 			window.addEventListener("DOMContentLoaded", (event) => {
+				const isMobile =
+					/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+						navigator.userAgent
+					);
 				VANTA.FOG({
-					el: "#your-element-selector",
+					el: "#vanta-container",
 					mouseControls: true,
 					touchControls: true,
 					gyroControls: false,
@@ -59,10 +184,58 @@
 					lowlightColor: 0xa0ff59,
 					baseColor: 0x33ff,
 					blurFactor: 0.5,
-					speed: 2.5,
+					speed: isMobile ? 1.0 : 2.5, // Adjust speed based on device type
 					zoom: 3.0,
 				});
 			});
 		</script>
+		<!-- color script -->
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const colors = [
+					"#FFCDD2",
+					"#F8BBD0",
+					"#E1BEE7",
+					"#D1C4E9",
+					"#C5CAE9",
+					"#BBDEFB",
+					"#B3E5FC",
+					"#B2EBF2",
+					"#B2DFDB",
+					"#C8E6C9",
+					"#DCEDC8",
+					"#F0F4C3",
+					"#FFF9C4",
+					"#FFECB3",
+					"#FFE0B2",
+					"#FFCCBC",
+					"#D7CCC8",
+					"#F5F5F5",
+					"#CFD8DC",
+					"#FFAB91",
+				];
+
+				document
+					.querySelectorAll(".grid-item")
+					.forEach((item, index) => {
+						// Cycle through colors array for each item
+						const colorIndex = index % colors.length;
+						item.style.backgroundColor = colors[colorIndex];
+						item.style.color = "#333"; // Ensuring text color is also set if needed
+					});
+			});
+		</script>
+		<!-- grid item size -->
+		<!-- <script>
+			document.addEventListener("DOMContentLoaded", function () {
+				document.querySelectorAll(".grid-item").forEach((item) => {
+					const size = item.getAttribute("data-size");
+					const baseSize = 15; // Base size in vh as defined in your CSS
+					const newSize = baseSize + (size - 1) * 2.5; // Calculate new size
+					item.style.height = `${newSize}vh`;
+					item.style.width = `${newSize}vh`;
+				});
+			});
+		</script> -->
 	</body>
 </html>

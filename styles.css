@@ -1,52 +1,121 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
-    overflow-y: auto; /* Enable vertical scrolling */
+:root {
+	--base-size: 15vh; /* Base size for the smallest button */
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+#vanta-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1; /* Ensure it stays behind other content */
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 200px; /* Increased gap */
-    padding: 20px; /* Increase padding if needed */
-    width: 100%;
-    box-sizing: border-box;
+	position: relative; /* Ensure grid-container is above the Vanta.js background */
+	z-index: 1;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+	/* gap: 10vh; */
+	padding: 20px;
+	width: 100vw; /* Ensure it spans the full width */
+	min-height: 100vh; /* Use min-height instead of height */
+	box-sizing: border-box;
+	overflow-y: auto; /* Enable vertical scrolling within the container if needed */
 }
 
 .grid-item {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 15vh;
-    width: 15vh; /* Adjust width to maintain aspect ratio */
-    border-radius: 50%;
-    color: rgb(0, 0, 0);
+    color: #333;
     font-weight: 700;
     font-size: 1.2em;
     text-align: center;
     user-select: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
-    background: linear-gradient(145deg, #a1c4fd, #c2e9fb); /* Example gradient */
+    background-color: #f0f0f0; /* Neutral background */
+    border: 2px solid rgba(255, 255, 255, 0.8); /* Soft border */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.8);
 }
 
+/* Styles for odd numbered grid items */
+.grid-item:nth-child(odd) {
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+/* Styles for even numbered grid items */
+.grid-item:nth-child(even) {
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+.grid-item:before {
+	content: "";
+	position: relative;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: linear-gradient(145deg, #ffffff, #e6e6e6);
+	border-radius: 18%; /* Maintain the shape slightly inside the main border */
+	z-index: -1;
+}
+
+/* Hover effect adjustments for scalability */
 .grid-item:hover {
-    transform: scale(1.2);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+	transform: scale(1.05); /* Reduced scale factor to ensure it fits */
 }
 
-/* Responsive Styling for Mobile Devices */
+/* Adjust the sizes based on data-size more responsibly */
+.grid-item[data-size="1"] {
+	height: 10vh;
+	width: 10vh;
+}
+.grid-item[data-size="2"] {
+	height: 15vh;
+	width: 15vh;
+}
+.grid-item[data-size="3"] {
+	height: 20vh;
+	width: 20vh;
+}
+.grid-item[data-size="4"] {
+	height: 25vh;
+	width: 25vh;
+}
+.grid-item[data-size="5"] {
+	height: 30vh;
+	width: 30vh;
+}
+
 @media (max-width: 600px) {
-    .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    }
-    .grid-item {
-        height: 15vh; /* Adjust size for mobile */
-        width: 15vh;
-    }
+	.grid-container {
+		gap: 5vh; /* Smaller gap for mobile */
+	}
+	.grid-item {
+		height: 10vh; /* Smaller size for mobile */
+		width: 10vh;
+	}
+	.grid-item[data-size="1"],
+	.grid-item[data-size="2"],
+	.grid-item[data-size="3"],
+	.grid-item[data-size="4"],
+	.grid-item[data-size="5"] {
+		max-height: 20vh; /* Allow bigger sizes if needed, or adjust as suitable */
+		max-width: 20vh;
+	}
 }
