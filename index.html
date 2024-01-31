@@ -1,50 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Adam Pangelinan's Personal Homepage" />
-    <title>Adam Pangelinan</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="test.css" />
-    <link rel="icon" type="image/jpeg" href="assets/fire.jpg" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-</head>
+	<head>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<!-- Include Three.js for Vanta.js FOG effect -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
+	</head>
 
-<body class="content-wrapper bg-neutral-200 text-neutral-900">
-
-    <main>	
-
-		<main>
-			<div class="grid-container">
-				<div class="grid-item item1 about">philosopher</div>
-				<div class="grid-item item2 about">🚧</div>
-				<div class="grid-item item3 about">🚧</div>
-				<div class="grid-item item4 about">🚧</div>
-
-				<div class="grid-item item5 curations">🚧</div>
-				<div class="grid-item item6 curations">🚧</div>
-				<div class="grid-item item7 curations">🚧</div>
-
-				<div class="grid-item item8 creations">🚧</div>
-				<div class="grid-item item9 creations" onclick="window.open('https://github.com/bubbapang', '_blank');">github</div>
-				<div class="grid-item item10 creations">🚧</div>
-				<div class="grid-item item11 creations">🚧</div>
-
-				<div class="grid-item item12 creations">🚧</div>
-				<div class="grid-item item13 contact" onclick="window.location.href='mailto:adamtpangelinan@gmail.com';">email</div>
-				<div class="grid-item item14 contact" onclick="window.open('https://calendly.com/adampangelinan', '_blank');">calendly</div>
-				<div class="grid-item item15 contact">671 686 2020</div>
-				<div class="grid-item item16 contact">whats App: 530 364 7565</div>
-				<div class="grid-item item17 contact" onclick="window.open('https://twitter.com/adamtpang', '_blank');">x</div>
-				<div class="grid-item item18 contact">discord: adamtpang</div>
-				<div class="grid-item item19 contact" onclick="window.open('https://www.linkedin.com/in/adam-pangelinan-8695a0159/', '_blank');">linkedIn</div>
-				<div class="grid-item item20 ">🚧</div>
-			</div>
+	<body
+		id="your-element-selector"
+		style="
+			width: 100vw;
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			font-family: 'Open Sans', sans-serif;
+		"
+	>
+		<main class="grid-container">
+			<div class="grid-item" style="background-color: #ff6666">1</div>
+			<div class="grid-item" style="background-color: #ff8c66">2</div>
+			<div class="grid-item" style="background-color: #ffb366">3</div>
+			<div class="grid-item" style="background-color: #ffd966">4</div>
+			<div class="grid-item" style="background-color: #ffff66">5</div>
+			<div class="grid-item" style="background-color: #d9ff66">6</div>
+			<div class="grid-item" style="background-color: #b3ff66">7</div>
+			<div class="grid-item" style="background-color: #8cff66">8</div>
+			<div class="grid-item" style="background-color: #66ff66">9</div>
+			<div class="grid-item" style="background-color: #66ff8c">10</div>
+			<div class="grid-item" style="background-color: #66ffb3">11</div>
+			<div class="grid-item" style="background-color: #66ffd9">12</div>
+			<div class="grid-item" style="background-color: #66ffff">13</div>
+			<div class="grid-item" style="background-color: #66d9ff">14</div>
+			<div class="grid-item" style="background-color: #66b3ff">15</div>
+			<div class="grid-item" style="background-color: #668cff">16</div>
+			<div class="grid-item" style="background-color: #6666ff">17</div>
+			<div class="grid-item" style="background-color: #8c66ff">18</div>
+			<div class="grid-item" style="background-color: #4db8ff">19</div>
+			<div class="grid-item" style="background-color: #3399ff">20</div>
 		</main>
 
-    </main>
-    <!-- Additional scripts can be added here -->
-</body>
+		<script>
+			window.addEventListener("DOMContentLoaded", (event) => {
+				VANTA.FOG({
+					el: "#your-element-selector",
+					mouseControls: true,
+					touchControls: true,
+					gyroControls: false,
+					minHeight: 200.0,
+					minWidth: 200.0,
+					highlightColor: 0xc5ff,
+					midtoneColor: 0xffffff,
+					lowlightColor: 0xa0ff59,
+					baseColor: 0x33ff,
+					blurFactor: 0.5,
+					speed: 2.5,
+					zoom: 3.0,
+				});
+			});
+		</script>
+	</body>
 </html>

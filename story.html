@@ -1,45 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="Adam Pangelinan Story" />
-		<title>Adam Pangelinan</title>
-		<link rel="stylesheet" href="styles.css" />
-		<link rel="icon" type="image/jpeg" href="assets/fire.jpg" />
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Adam Pangelinan's Personal Homepage" />
+    <title>Adam Pangelinan</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="test.css" />
+    <link rel="icon" type="image/jpeg" href="assets/fire.jpg" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
 
-	</head>
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			var menuButton = document.getElementById("menu-toggle");
-			var navigation = document.querySelector("nav");
+<body class="content-wrapper bg-neutral-200 text-neutral-900">
 
-			menuButton.addEventListener("click", function () {
-				// Check if nav is open
-				if (navigation.style.left === "0px") {
-					navigation.style.left = "-100%"; // Hide nav
-				} else {
-					navigation.style.left = "0px"; // Show nav
-				}
-			});
-		});
-	</script>
-	<body class="content-wrapper">
-		<button id="menu-toggle" aria-label="Open navigation">Menu</button>
+    <main>	
+
 		<main>
-			<h1>STORY.</h1>
-			<p>1: Born in Guam.</p>
-			<p>2: Had <a href="https://en.wikipedia.org/wiki/Cartesian_doubt"target="_blank" rel="noopener noreferrer">Cartesian doubt</a>, finds <a href="https://www.youtube.com/watch?v=BNYJQaZUDrI&list=PL8dPuuaLjXtNgK6MZucdYldNkMybYIHKR" target="_blank" rel="noopener noreferrer">philosophy</a>.</p>
-			<p>3: Wants to attend online school to escape BS faster.</p>
-			<p>4: Starts the "Dead Philosophers' Society".</p>
-			<p>5. Hit 17 and felt mortality for the first time.</p>
-			<p>5: Covid, decides on <a href="https://www.youtube.com/watch?v=knj9Atxscrc" target="_blank" rel="noopener noreferrer">gap year</a>.</p>
-			<p>6: Produces <a href="http://localhost:5500/soundcloud.com/adam-pangelinan-616223706"target="_blank" rel="noopener noreferrer">music</a>, works at <a href="https://www.idiguam.com/"target="_blank" rel="noopener noreferrer">family business</a>, passes real estate exam.</p>
-			<p>7: <a href="https://www.udemy.com/course/100-days-of-code/"target="_blank" rel="noopener noreferrer">Learns to code</a>.</p>
-			<p>8: Attends <a href="https://www.appacademy.io/"target="_blank" rel="noopener noreferrer">coding bootcamp</a> in San Francisco.</p>
-			<p>9: Soul searches, finds more of his <a href="https://visakanv.gumroad.com/l/FANbook"target="_blank" rel="noopener noreferrer">tribe</a>, and keeps <a href="portfolio.html">creating</a>.</a></p>
-			<p><a href="now.html">now.</p>
+            <!-- make a bullet point template autobio -->
+            <div class="grid-container">
+                <div class="grid-item item0">
+                    <h1>STORY.</h1>
+                    <ul>
+                        <li>born in guam</li>
+                        <li>loved music games like guitar hero and rockband, was obsessed and even got on the newspaper</li>
+                        <li>minecraft and redstone love begins</li>
+                        <li>parents divorced</li>
+                        <li>was in a bushcraft jungle survival phase (played with fire and machete a lot) made lots of weapons (always into this, like desk weapons)</li>
+                        <li>learned to play the guitar and songwriting</li>
+
+                        <li>highschool starts</li>
+                        <li>made a candy business</li>
+                        <li>tried wrestling</li>
+                        <li>started producing music</li>
+                        <li>had an existential crisis and found philosophy</li>
+                        <li>tried to leave school to escape bs</li>
+
+                        <li>covid hit senior year</li>
+                        <li>decided on no college, super scary but no turning back</li>
+                        <li>"the homies" started</li>
+                        <li>tried producing music</li>
+                        <li>i got really good at hearthstone and tetris (global top 0.5% player and #1 player on Guam, respectively)</li>
+                    </ul>
+                </div>
+                <div class="grid-item item0">
+                    <ul>
+                        <li>worked at family business in sales for 6 months, found tim ferriss</li>
+                        <li>passed my real estate exam</li>
+                        <li>tried a semester of college. yup didnt like it (not that life is all about liking things)</li>
+                        <li>found coding and pursued that instead</li>
+                        <li>started coding my own projects and tools for myself</li>
+                        <li>went to a coding bootcamp in San Francisco (app academy). had lots of highs and lows</li>
+                        <li>lived in a coliving house with 13 other people (908 coliving). made friends, great experience</li>
+                        <li>come back home</li>
+                        <li>tech market goes to shit</li>
+                        <li>i start playing pickup soccer</li>
+                        <li>i find a local coding meetup</li>
+                        <li>started playing poker, pretty fun</li>
+                        <li>on twitter a ton</li>
+                        <li>discover indie hacking (pieter levels)</li>
+
+                        <li>learning a ton about creativity from rick rubin. doing what i want</li>
+                        <li>started a 100 days of tweeting challenge, making friends online little by little</li>
+                    </ul>
+                </div>
 		</main>
-	</body>
+
+    </main>
+</body>
 </html>
