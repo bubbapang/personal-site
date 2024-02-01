@@ -6,8 +6,9 @@ body,
 html {
 	margin: 0;
 	padding: 0;
-	font-family: "Roboto", sans-serif;
 	overflow-x: hidden; /* Prevent horizontal scrolling */
+	font-family: 'helvetica neue', helvetica, sans-serif;
+
 }
 
 #vanta-container {
@@ -23,10 +24,10 @@ html {
 	position: relative; /* Ensure grid-container is above the Vanta.js background */
 	z-index: 1;
 	display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-	/* gap: 10vh; */
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 5vh;
 	padding: 20px;
 	width: 100vw; /* Ensure it spans the full width */
 	min-height: 100vh; /* Use min-height instead of height */
@@ -35,37 +36,41 @@ html {
 }
 
 .grid-item {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000000;
-    font-weight: 700;
-    font-size: 1em;
-    text-align: center;
-    user-select: none;
-    transition: all 0.3s ease;
-    cursor: pointer;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #000000;
+	font-weight: 700;
+
+	/* make font size proportionate to grid item size */
+	font-size: 32px;
+
+	text-align: center;
+	user-select: none;
+	transition: all 0.3s ease;
+	cursor: pointer;
 	/* make a slightly translucent background */
 	background: rgba(255, 255, 255, 0.8);
 
-    border: 2px solid rgba(255, 255, 255, 0.8); /* Soft border */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(82, 82, 82, 0.8);
-	font-size: calc(0.5em + 1vw); /* Adjusted for better desktop sizing */
+	border: 2px solid rgba(255, 255, 255, 0.8); /* Soft border */
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2),
+		-5px -5px 15px rgba(82, 82, 82, 0.8);
 
+	padding: 50px;
 }
 
 /* Styles for odd numbered grid items */
 .grid-item:nth-child(odd) {
-    border-top-right-radius: 30%;
-    border-bottom-left-radius: 30%;
+	border-top-right-radius: 30%;
+	border-bottom-left-radius: 30%;
 }
 
 /* Styles for even numbered grid items */
 .grid-item:nth-child(even) {
-    border-top-left-radius: 30%;
-    border-bottom-right-radius: 30%;
-}	
+	border-top-left-radius: 30%;
+	border-bottom-right-radius: 30%;
+}
 
 .grid-item:before {
 	content: "";
@@ -81,7 +86,7 @@ html {
 
 /* Hover effect adjustments for scalability */
 .grid-item:hover {
-	transform: scale(1.05); /* Reduced scale factor to ensure it fits */
+	transform: scale(1.1); /* Reduced scale factor to ensure it fits */
 }
 
 /* Adjust the sizes based on data-size more responsibly */
@@ -90,31 +95,30 @@ html {
 	width: 10vh;
 }
 .grid-item[data-size="2"] {
-	height: 15vh;
-	width: 15vh;
-}
-.grid-item[data-size="3"] {
 	height: 20vh;
 	width: 20vh;
 }
-.grid-item[data-size="4"] {
-	height: 25vh;
-	width: 25vh;
-}
-.grid-item[data-size="5"] {
+.grid-item[data-size="3"] {
 	height: 30vh;
 	width: 30vh;
 }
+.grid-item[data-size="4"] {
+	height: 40vh;
+	width: 40vh;
+}
+.grid-item[data-size="5"] {
+	height: 50vh;
+	width: 50vh;
+}
 
 @media (max-width: 600px) {
-    .grid-container {
-        gap: 5vh; /* Adjusted gap for mobile */
-    }
-    .grid-item {
-        height: 20vh; /* Adjusted size for mobile */
-        width: 20vw; /* Adjusted width for mobile */
-        font-size: 4vw; /* Increased font size for better legibility on mobile */
-    }
+	.grid-container {
+		gap: 5vh; /* Adjusted gap for mobile */
+	}
+	.grid-item {
+		height: 20vh; /* Adjusted size for mobile */
+		width: 20vw; /* Adjusted width for mobile */
+	}
 
 	.grid-item[data-size="1"],
 	.grid-item[data-size="2"],
@@ -123,5 +127,12 @@ html {
 	.grid-item[data-size="5"] {
 		max-height: 30vh; /* Allow bigger sizes if needed, or adjust as suitable */
 		max-width: 30vh;
+	}
+}
+
+/* Even larger font size for large screens */
+@media (min-width: 1000px) {
+	.grid-item {
+		font-size: calc(0.8em + 0.8vw);
 	}
 }
