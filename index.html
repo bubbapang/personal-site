@@ -9,6 +9,8 @@
 		<!-- Include Three.js for Vanta.js FOG effect -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	</head>
 
 	<body
@@ -26,142 +28,156 @@
 			<div
 				class="grid-item"
 				data-size="2"
-				style="background-color: #ff6666"
+				style="background-color: lightblue;"
 			>
 				minimal paragraph
 			</div>
 			<div
 				class="grid-item"
 				data-size="3"
-				style="background-color: #ff8c66"
+				style="background-color: lightblue;"
 			>
 				now page
 			</div>
 			<div
 				class="grid-item"
 				data-size="3"
-				style="background-color: #ffad66"
+				style="background-color: lightblue;"
 			>
 				bullet point public autobio
 			</div>
 			<div
 				class="grid-item"
 				data-size="4"
-				style="background-color: #ffcc66"
+				style="background-color: lightblue;"
 			>
 				resume
 			</div>
 			<div
 				class="grid-item"
 				data-size="4"
-				style="background-color: #ffff66"
+				style="background-color: lightcoral;"
 			>
 				hero profiles
 			</div>
 			<div
 				class="grid-item"
 				data-size="3"
-				style="background-color: #ccff66"
+				style="background-color: lightcoral;"
+
 			>
 				bookshelf
 			</div>
 			<div
 				class="grid-item"
 				data-size="2"
-				style="background-color: #99ff66"
+				style="background-color: lightcoral;"
+
 			>
 				song reviews + spotistats
 			</div>
 			<div
 				class="grid-item"
 				data-size="3"
-				style="background-color: #66ff66"
+				style="background-color: lightgreen;"
+
 			>
 				soundcloud
 			</div>
 			<div
 				class="grid-item"
 				data-size="4"
-				style="background-color: #66ff99"
+				style="background-color: lightgreen;"
+
 			>
 				github
 			</div>
 			<div
 				class="grid-item"
 				data-size="4"
-				style="background-color: #66ffcc"
+				style="background-color: lightgreen;"
+
 			>
 				essays
 			</div>
 			<div
 				class="grid-item"
 				data-size="4"
-				style="background-color: #66ffff"
+				style="background-color: lightgreen;"
+
 			>
 				project showcase
 			</div>
 			<div
 				class="grid-item"
 				data-size="3"
-				style="background-color: #66ccff"
+				style="background-color: lightgreen;"
+
 			>
 				project voting
 			</div>
 			<div
 				class="grid-item"
 				data-size="2"
-				style="background-color: #6699ff"
+				style="background-color: lightyellow;"
+
 			>
 				discord chat
 			</div>
 			<div
 				class="grid-item"
 				data-size="3"
-				style="background-color: #6666ff"
+				style="background-color: lightyellow;"
+
 			>
 				whatsapp chat
 			</div>
 			<div
 				class="grid-item"
 				data-size="5"
-				style="background-color: #9966ff"
+				style="background-color: lightyellow;"
+
 			>
 				twitter
 			</div>
 			<div
 				class="grid-item"
 				data-size="4"
-				style="background-color: #cc66ff"
+				style="background-color: lightyellow;"
+
 			>
 				email
 			</div>
 			<div
 				class="grid-item"
 				data-size="2"
-				style="background-color: #ff66ff"
+				style="background-color: lightyellow;"
+
 			>
 				phone #
 			</div>
 			<div
 				class="grid-item"
 				data-size="5"
-				style="background-color: #ff66cc"
+				style="background-color: lightyellow;"
+
 			>
 				calendly
 			</div>
 			<div
 				class="grid-item"
 				data-size="2"
-				style="background-color: #ff6699"
+				style="background-color: lightyellow;"
+
 			>
 				linkedin
 			</div>
 			<div
 				class="grid-item"
-				data-size="1"
-				style="background-color: #3399ff"
+				data-size="5"
+				style="background-color: black; color: white;"
 			>
-				filler
+				THIS SITE IS UNDER CONSTRUCTION YO!
 			</div>
 		</main>
 
@@ -187,66 +203,6 @@
 					speed: isMobile ? 1.0 : 2.5, // Adjust speed based on device type
 					zoom: 3.0,
 				});
-			});
-		</script>
-		<!-- color script -->
-		<script>
-			document.addEventListener("DOMContentLoaded", function () {
-				const colors = [
-					"#8ecae6",
-					"#219ebc",
-					"#126782",
-					"#023047",
-					"#ffb703",
-					"#fd9e02",
-					"#fb8500",
-					"#2f3e46",
-					"#354f52",
-					"#52796f",
-					"#84a98c",
-					"#cad2c5",
-					"#ffb3c1",
-					"#ff8fa3",
-					"#ff758f",
-					"#ff4d6d",
-					"#c9184a",
-					"#a4133c",
-					"#800f2f",
-					"#590d22",
-				];
-
-				document
-					.querySelectorAll(".grid-item")
-					.forEach((item, index) => {
-						// Cycle through colors array for each item
-						const colorIndex = index % colors.length;
-						item.style.backgroundColor = colors[colorIndex];
-					});
-			});
-			document.addEventListener("DOMContentLoaded", function () {
-				document
-					.querySelectorAll(".grid-item")
-					.forEach(function (item) {
-						// Get the background color of the item
-						var bgColor =
-							window.getComputedStyle(item).backgroundColor;
-
-						// Convert background color to YIQ spectrum (to determine brightness)
-						var rgb = bgColor
-							.replace(
-								/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/,
-								"$1 $2 $3"
-							)
-							.split(" ");
-						var yiq =
-							(parseInt(rgb[0]) * 299 +
-								parseInt(rgb[1]) * 587 +
-								parseInt(rgb[2]) * 114) /
-							1000;
-
-						// Set text color based on background color brightness
-						item.style.color = yiq >= 128 ? "black" : "white";
-					});
 			});
 		</script>
 	</body>

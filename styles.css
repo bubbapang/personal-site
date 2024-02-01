@@ -39,16 +39,20 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
+    color: #000000;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: center;
     user-select: none;
     transition: all 0.3s ease;
     cursor: pointer;
-    background-color: #f0f0f0; /* Neutral background */
+	/* make a slightly translucent background */
+	background: rgba(255, 255, 255, 0.8);
+
     border: 2px solid rgba(255, 255, 255, 0.8); /* Soft border */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(82, 82, 82, 0.8);
+	font-size: calc(0.5em + 1vw); /* Adjusted for better desktop sizing */
+
 }
 
 /* Styles for odd numbered grid items */
@@ -61,7 +65,7 @@ html {
 .grid-item:nth-child(even) {
     border-top-left-radius: 30%;
     border-bottom-right-radius: 30%;
-}
+}	
 
 .grid-item:before {
 	content: "";
@@ -103,13 +107,15 @@ html {
 }
 
 @media (max-width: 600px) {
-	.grid-container {
-		gap: 5vh; /* Smaller gap for mobile */
-	}
-	.grid-item {
-		height: 10vh; /* Smaller size for mobile */
-		width: 10vh;
-	}
+    .grid-container {
+        gap: 5vh; /* Adjusted gap for mobile */
+    }
+    .grid-item {
+        height: 20vh; /* Adjusted size for mobile */
+        width: 20vw; /* Adjusted width for mobile */
+        font-size: 4vw; /* Increased font size for better legibility on mobile */
+    }
+
 	.grid-item[data-size="1"],
 	.grid-item[data-size="2"],
 	.grid-item[data-size="3"],
