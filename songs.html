@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/redsquare16.jpeg">
+    <title>songs</title>
+</head>
+
+<body id="your-element-selector" style="width: 100vw; margin: 0; padding: 0;">
+    <div id="vanta-container"></div>
+
+    <main class="grid-container" style="color: white;">
+        <ul>
+            <h1>I believe music taste is the fastest way to know someone</h1>
+            
+            <br>
+            <h3><a href="https://soundcloud.com/adam-pangelinan-616223706/sets/1-2-3-4-5a">Ma Soundcloud</a></h3>
+            <h3>Ma spotify top tracks (past 30 days):</h3>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6XD4ayXfHUTAWLt2DPFxWD?utm_source=generator" width="100%" height="600" width="1000" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </ul>
+
+    </main>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+            VANTA.FOG({
+                el: "#vanta-container",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.0,
+                minWidth: 200.0,
+                highlightColor: 0xef476f,
+                midtoneColor: 0xffd166,
+                lowlightColor: 0x06d6a0,
+                baseColor: 0x118ab2,
+                blurFactor: 0.5,
+                speed: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? 1.0 : 2.5,
+                zoom: 3.0,
+            });
+        });
+    </script>
+</body>
+
+</html>
