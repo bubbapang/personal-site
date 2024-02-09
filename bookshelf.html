@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/redsquare16.jpeg">
+    <title>bookshelf</title>
+</head>
+
+<body id="your-element-selector" style="width: 100vw; margin: 0; padding: 0;">
+    <div id="vanta-container"></div>
+
+    <main class="grid-container" style="color: white;">
+        <ul>
+            <!-- my list
+                how much has it impacted me?
+            -->
+
+            <h3>S</h3>
+            <li>Zero to One</li>
+            <br>
+
+            <h3>A</h3>
+            <li>Siddartha</li>
+            <br>
+
+            <h3>B</h3>
+            <li>introspect</li>
+            <li>the creative act</li>
+            <li>the war of art</li>
+            <li>tribe of mentors</li>
+            <br>
+
+            <h3>C</h3>
+            <li>tao te ching</li>
+            <li>meditations</li>
+            <li>man's search for meaning</li>
+            <li>flow</li>
+            <li>friendly ambitious nerd</li>
+            <li>excellent advice for living</li>
+            <li>how to live</li>
+            <li>anything you want</li>
+            <li>4 hour body</li>
+            <br>
+
+            <h3>D</h3>
+            <li>4 hour work week</li>
+            <li>hackers and painters</li>
+
+            <br>
+
+            <h3>F</h3>
+            <li></li>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h3>Want to Read</h3>
+            <li>books so old they start with "the": bible, etc.</li>
+
+            <br>
+            <br>
+            <br>
+
+            <h3>I'll add more books that im forgetting / not with atm</h3>
+
+
+
+        </ul>
+
+    </main>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+            VANTA.FOG({
+                el: "#vanta-container",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.0,
+                minWidth: 200.0,
+                highlightColor: 0x333333,
+                midtoneColor: 0xd5ccc7,
+                lowlightColor: 0xa9a29c,
+                baseColor: 0x28262b,
+                blurFactor: 0.5,
+                speed: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? 1.0 : 2.5,
+                zoom: 3.0,
+            });
+        });
+    </script>
+</body>
+
+</html>
