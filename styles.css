@@ -1,3 +1,4 @@
+
 :root {
     --base-grid-height: 10vh; /* Base height for data-size="1" */
     --base-grid-width: 10vw; /* Base width for data-size="1" */
@@ -47,6 +48,8 @@ html {
 	overflow-x: hidden;
 	/* Prevent horizontal scrolling */
 	font-family: "helvetica neue", helvetica, sans-serif;
+	cursor: none;
+
 }
 
 #vanta-container {
