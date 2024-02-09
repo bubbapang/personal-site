@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/redsquare16.jpeg">
+    <title>heroes</title>
+</head>
+
+<body id="your-element-selector" style="width: 100vw; margin: 0; padding: 0;">
+    <div id="vanta-container"></div>
+
+    <main class="grid-container" style="color: white;">
+        <ul>
+            <h3>S</h3>
+            <li>Peter Thiel</li>
+            <br>
+
+            <h3>A</h3>
+            <li>Tim Ferriss</li>
+            <br>
+
+            <h3>B</h3>
+            <li>John Vervaeke</li>
+            <li>Derek Sivers</li>
+            <br>
+
+            <h3>C</h3>
+            <li>Rick Rubin</li>
+            <li>Andrew Huberman</li>
+            <li>Ryan Holiday</li>
+            <li>Visakan Veerasamy</li>
+            <br>
+
+            <h3>D</h3>
+            <br>
+
+            <h3>F</h3>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h3>Certified Mainstream</h3>
+            <li>Elon Musk</li>
+            <li>Paul McCartney</li>
+            <li>Jordan Peterson</li>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h3>Honorable Mentions</h3>
+            <li>Kevin Kelly</li>
+            <li>David Goggins</li>
+            <li>Pieter Levels</li>
+
+            <br>
+            <br>
+            <br>
+
+            <h3>I'm for sure missing people that I'll add later</h3>
+
+
+
+        </ul>
+
+    </main>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+            VANTA.FOG({
+                el: "#vanta-container",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.0,
+                minWidth: 200.0,
+                highlightColor: 0x003049,
+                midtoneColor: 0xd62828,
+                lowlightColor: 0xf77f00,
+                baseColor: 0x003049,
+                blurFactor: 0.5,
+                speed: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? 1.0 : 2.5,
+                zoom: 3.0,
+            });
+        });
+    </script>
+</body>
+
+</html>
