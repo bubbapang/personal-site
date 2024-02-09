@@ -1,194 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
-		<link rel="stylesheet" href="styles.css" />
-		<!-- Include Three.js for Vanta.js FOG effect -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
-		<!-- favicon -->
-		<link rel="icon" type="image/png" sizes="16x16" href="/redsquare16.jpeg">
+	<link rel="stylesheet" href="styles.css" />
+	<!-- Include Three.js for Vanta.js FOG effect -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	</head>
+	<!-- favicon -->
+	<link rel="icon" type="image/png" sizes="16x16" href="/redsquare16.jpeg">
 
-	<body
-		id="your-element-selector"
-		style="
+</head>
+
+<body id="your-element-selector" style="
 			width: 100vw;
 			margin: 0;
 			padding: 0;
-		"
-	>
-		<div id="vanta-container"></div>
+		">
+	<div id="vanta-container"></div>
 
-		<main class="grid-container">
-			<div
-				class="grid-item"
-				data-size="4"
-			>
-				THIS SITE IS UNDER CONSTRUCTION YO! (insert profile pic)
-			</div>
-			<div
-				class="grid-item"
-				data-size="2"
-			>
-				<h5>
-					Yo, I'm Adam.
-					I don't like talking about myself... identity is a tricky thing!
+	<main class="grid-container">
+		<div class="grid-item" data-size="4">
+			<img src="merlion.jpg" alt="merlion" style="width:100%">
+		</div>
 
-				</h5>
-			</div>
-			<div
-				class="grid-item"
-				data-size="3"
-			>
-				now page
-			</div>
-			<div
-				class="grid-item"
-				data-size="3"
-			>
-				bullet point public autobio
-			</div>
-			<div
-				class="grid-item"
-				data-size="3"
-			>
-				resume
-			</div>
-			<div
-				class="grid-item"
-				data-size="4""
-			>
-				hero profiles
-			</div>
-			<div
-				class="grid-item"
-				data-size="3""
+		<!-- make the div click to open a url -->
+		<div class="grid-item clickable" data-size="2" onclick="window.location.href='/timeline';">
+			timeline
+		</div>
 
-			>
-				bookshelf
-			</div>
-			<div
-				class="grid-item"
-				data-size="2""
+		<div class="grid-item clickable" data-size="3" onclick="window.location.href='/now';">
+			now
+		</div>
+		<div class="grid-item" data-size="3">
+			test
+		</div>
+		<div class="grid-item" data-size="3">
+			resume
+		</div>
+		<div class="grid-item" data-size="4">
+			hero profiles
+		</div>
+		<div class=" grid-item" data-size="3">
+			bookshelf
+		</div>
+		<div class=" grid-item" data-size="2">
+			song reviews + spotistats
+		</div>
+		<div class=" grid-item" data-size="2">
+			soundcloud
+		</div>
+		<div class=" grid-item" data-size="3">
+			github
+		</div>
+		<div class=" grid-item" data-size="3">
+			essays
+		</div>
+		<div class=" grid-item" data-size="3">
+			project showcase
+		</div>
+		<div class=" grid-item" data-size="2">
+			project voting
+		</div>
+		<div class=" grid-item" data-size="1">
+			discord chat
+		</div>
+		<div class="grid-item" data-size="2">
+			whatsapp chat
+		</div>
+		<div class="grid-item" data-size="4">
+			twitter
+		</div>
+		<div class="grid-item" data-size="3">
+			email
+		</div>
+		<div class="grid-item" data-size="1">
+			phone #
+		</div>
+		<div class="grid-item" data-size="5">
+			calendly
+		</div>
+		<div class="grid-item" data-size="1">
+			linkedin
+		</div>
 
-			>
-				song reviews + spotistats
-			</div>
-			<div
-				class="grid-item"
-				data-size="2""
+	</main>
 
-			>
-				soundcloud
-			</div>
-			<div
-				class="grid-item"
-				data-size="3""
-
-			>
-				github
-			</div>
-			<div
-				class="grid-item"
-				data-size="3""
-
-			>
-				essays
-			</div>
-			<div
-				class="grid-item"
-				data-size="3""
-
-			>
-				project showcase
-			</div>
-			<div
-				class="grid-item"
-				data-size="2""
-
-			>
-				project voting
-			</div>
-			<div
-				class="grid-item"
-				data-size="1";"
-
-			>
-				discord chat
-			</div>
-			<div
-				class="grid-item"
-				data-size="2";"
-
-			>
-				whatsapp chat
-			</div>
-			<div
-				class="grid-item"
-				data-size="4";"
-
-			>
-				twitter
-			</div>
-			<div
-				class="grid-item"
-				data-size="3";"
-
-			>
-				email
-			</div>
-			<div
-				class="grid-item"
-				data-size="1";"
-
-			>
-				phone #
-			</div>
-			<div
-				class="grid-item"
-				data-size="5";"
-
-			>
-				calendly
-			</div>
-			<div
-				class="grid-item"
-				data-size="1";"
-
-			>
-				linkedin
-			</div>
-
-		</main>
-
-		<!-- vanta script -->
-		<script>
-			window.addEventListener("DOMContentLoaded", (event) => {
-				const isMobile =
-					/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-						navigator.userAgent
-					);
-				VANTA.FOG({
-					el: "#vanta-container",
-					mouseControls: true,
-					touchControls: true,
-					gyroControls: false,
-					minHeight: 200.0,
-					minWidth: 200.0,
-					highlightColor: 0xc5ff,
-					midtoneColor: 0xffffff,
-					lowlightColor: 0xa0ff59,
-					baseColor: 0x33ff,
-					blurFactor: 0.5,
-					speed: isMobile ? 1.0 : 2.5, // Adjust speed based on device type
-					zoom: 3.0,
-				});
+	<!-- vanta script -->
+	<script>
+		window.addEventListener("DOMContentLoaded", (event) => {
+			const isMobile =
+				/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+					navigator.userAgent
+				);
+			VANTA.FOG({
+				el: "#vanta-container",
+				mouseControls: true,
+				touchControls: true,
+				gyroControls: false,
+				minHeight: 200.0,
+				minWidth: 200.0,
+				highlightColor: 0xc5ff,
+				midtoneColor: 0xffffff,
+				lowlightColor: 0xa0ff59,
+				baseColor: 0x33ff,
+				blurFactor: 0.5,
+				speed: isMobile ? 1.0 : 2.5, // Adjust speed based on device type
+				zoom: 3.0,
 			});
-		</script>
-	</body>
+		});
+	</script>
+</body>
+
 </html>

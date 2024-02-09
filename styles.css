@@ -1,14 +1,49 @@
-:root {
-	--base-size: 10vh; /* Base size for the smallest button */
+ul {
+	padding-left: 20px;
+	font-size: 170%;
+	margin: 0 auto;
+	max-width: 40%;
 }
+
+@media (max-width: 768px) {
+	ul {
+		font-size: 130%;
+		/* Smaller font size on mobile */
+		max-width: 80%;
+		/* Use more of the screen width */
+		padding-left: 10px;
+		/* Adjust padding for smaller screens */
+	}
+}
+
+li:before {
+	content: '♦ ';
+	/* Adds a star before each list item */
+	padding-right: 5px;
+	/* Adjust space between the star and the list item text */
+	color: rgb(0, 211, 106);
+	/* Or any color you prefer */
+}
+
+li {
+	display: block;
+	margin-bottom: 10px;
+	/* Adjust the space between list items */
+	word-wrap: break-word;
+	word-break: break-word;
+}
+
+/* Existing CSS for body, html, #vanta-container, .grid-container, .grid-item, etc. */
+
+
 
 body,
 html {
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden; /* Prevent horizontal scrolling */
-	font-family: 'helvetica neue', helvetica, sans-serif;
-
+	overflow-x: hidden;
+	/* Prevent horizontal scrolling */
+	font-family: "helvetica neue", helvetica, sans-serif;
 }
 
 #vanta-container {
@@ -17,11 +52,13 @@ html {
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	z-index: -1; /* Ensure it stays behind other content */
+	z-index: -1;
+	/* Ensure it stays behind other content */
 }
 
 .grid-container {
-	position: relative; /* Ensure grid-container is above the Vanta.js background */
+	position: relative;
+	/* Ensure grid-container is above the Vanta.js background */
 	z-index: 1;
 	display: flex;
 	flex-wrap: wrap;
@@ -29,10 +66,13 @@ html {
 	align-items: center;
 	gap: 5vh;
 	padding: 20px;
-	width: 100vw; /* Ensure it spans the full width */
-	min-height: 100vh; /* Use min-height instead of height */
+	width: 100vw;
+	/* Ensure it spans the full width */
+	min-height: 100vh;
+	/* Use min-height instead of height */
 	box-sizing: border-box;
-	overflow-y: auto; /* Enable vertical scrolling within the container if needed */
+	overflow-y: auto;
+	/* Enable vertical scrolling within the container if needed */
 }
 
 .grid-item {
@@ -41,23 +81,18 @@ html {
 	align-items: center;
 	justify-content: center;
 	color: #000000;
-	font-weight: 700;
-
-	/* make font size proportionate to grid item size */
-	font-size: 32px;
-
 	text-align: center;
 	user-select: none;
 	transition: all 0.3s ease;
 	cursor: pointer;
-	/* make a slightly translucent background */
 	background: rgba(255, 255, 255, 0.8);
-
-	border: 2px solid rgba(255, 255, 255, 0.8); /* Soft border */
+	border: 2px solid rgba(255, 255, 255, 0.8);
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2),
 		-5px -5px 15px rgba(82, 82, 82, 0.8);
-
-	padding: 50px;
+	padding: 10px;
+	/* Adjusted padding */
+	word-wrap: break-word;
+	/* Ensure text wraps within container */
 }
 
 /* Styles for odd numbered grid items */
@@ -80,59 +115,59 @@ html {
 	right: -2px;
 	bottom: -2px;
 	background: linear-gradient(145deg, #ffffff, #e6e6e6);
-	border-radius: 18%; /* Maintain the shape slightly inside the main border */
+	border-radius: 18%;
+	/* Maintain the shape slightly inside the main border */
 	z-index: -1;
 }
 
 /* Hover effect adjustments for scalability */
-.grid-item:hover {
-	transform: scale(1.1); /* Reduced scale factor to ensure it fits */
+.clickable:hover {
+	transform: scale(1.05);
+	/* Reduced scale factor to ensure it fits */
+	background-color: #000000bd;
+	/* Example hover effect */
+	color: #ffffff;
+	/* Example hover effect */
 }
 
-/* Adjust the sizes based on data-size more responsibly */
+/* Adjust the sizes and font sizes based on data-size */
 .grid-item[data-size="1"] {
 	height: 10vh;
 	width: 10vh;
+	font-size: calc(1.0vh + 1.0vw);
 }
+
 .grid-item[data-size="2"] {
 	height: 20vh;
 	width: 20vh;
+	font-size: calc(1.5vh + 1.5vw);
 }
+
 .grid-item[data-size="3"] {
 	height: 30vh;
 	width: 30vh;
+	font-size: calc(2.0vh + 2.0vw);
 }
+
 .grid-item[data-size="4"] {
 	height: 40vh;
 	width: 40vh;
+	font-size: calc(2.5vh + 2.5vw);
 }
+
 .grid-item[data-size="5"] {
 	height: 50vh;
 	width: 50vh;
+	font-size: calc(3.0vh + 3.0vw);
 }
 
-@media (max-width: 600px) {
-	.grid-container {
-		gap: 5vh; /* Adjusted gap for mobile */
-	}
-	.grid-item {
-		height: 20vh; /* Adjusted size for mobile */
-		width: 20vw; /* Adjusted width for mobile */
-	}
-
-	.grid-item[data-size="1"],
-	.grid-item[data-size="2"],
-	.grid-item[data-size="3"],
-	.grid-item[data-size="4"],
-	.grid-item[data-size="5"] {
-		max-height: 30vh; /* Allow bigger sizes if needed, or adjust as suitable */
-		max-width: 30vh;
-	}
+a {
+	text-decoration: none;
+	/* Removes underline */
 }
 
-/* Even larger font size for large screens */
-@media (min-width: 1000px) {
-	.grid-item {
-		font-size: calc(0.8em + 0.8vw);
-	}
+a:hover,
+a:active {
+	text-decoration: underline;
+	/* Optional: underline on hover for visual feedback */
 }

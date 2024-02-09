@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/redsquare16.jpeg">
+    <title>now</title>
+</head>
+
+<body id="your-element-selector" style="width: 100vw; margin: 0; padding: 0;">
+    <div id="vanta-container"></div>
+
+    <main class="grid-container" style="color: white;">
+        <ul>
+            <h3>last updated feb 9 2024</h3>
+            <li>working on this site</li>
+            <li>doing a 100 days of tweeting challenge</li>
+            <li>most productive ive ever been thanks to <a href="https://www.youtube.com/watch?v=84dYijIpWjQ&t=1s" >this newly discovered brain area</a></li>
+            <li>soccer</li>
+            <li>poker</li>
+        </ul>
+
+    </main>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+            VANTA.FOG({
+                el: "#vanta-container",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.0,
+                minWidth: 200.0,
+                highlightColor: 0xdabfff,
+                midtoneColor: 0x907ad6,
+                lowlightColor: 0x4f518c,
+                baseColor: 0x2c2a4a,
+                blurFactor: 0.5,
+                speed: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? 1.0 : 2.5,
+                zoom: 3.0,
+            });
+        });
+    </script>
+</body>
+
+</html>
