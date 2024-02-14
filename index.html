@@ -5,96 +5,84 @@
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="styles.css" />
-	<!-- Include Three.js for Vanta.js FOG effect -->
+	<!-- Include three.js -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
+	<!-- Include Vanta.js with the effect you want to use (in this case, Trunk) -->
+	<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.waves.min.js"></script>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- favicon -->
 	<link rel="icon" type="image/png" sizes="16x16" href="/redsquare16.jpeg">
+	<title>ADAM</title>
 
 </head>
 
-<body id="your-element-selector" style="
-			width: 100vw;
-			margin: 0;
-			padding: 0;
-		">
+<body id="your-element-selector"></body>
 	<div id="vanta-container"></div>
 
-	<main class="grid-container">
-		<!-- <div class="grid-item" data-size="5">
-			<img src="merlion.jpg" alt="merlion" style="width:100%">
-		</div> -->
+	<main class="grid-container" style="
+		width: 30vw;
+		left: 20%;
+	">
 
 		<!-- make the div click to open a url -->
-		<div class=" grid-item clickable" data-size="4" onclick="window.location.href='/songs.html';">
-			Songs
+		<div class=" grid-item clickable" data-size="3" onclick="window.location.href='/musica.html';">
+			MUSICA
 		</div>
 		<div class="grid-item clickable" data-size="2" onclick="window.location.href='/now.html';">
-			now
+			NOW
 		</div>
 
 		<div class="grid-item clickable" data-size="2" onclick="window.location.href='/timeline.html';">
-			timeline
+			TIMELINE
 		</div>
 
 		<div class="grid-item clickable" data-size="3" onclick="window.location.href='/heroes.html';">
-			heroes
+			HEROES
 		</div>
 
 		<div class="grid-item clickable" data-size="2" onclick="window.location.href='https://twitter.com/adamtpang';">
-			twitter
+			TWITTER
 		</div>
 
 		<div class=" grid-item clickable" data-size="3" onclick="window.location.href='/projects.html';">
-			projects
+			PROJECTS
 		</div>
 		<!-- project ideas + voting -->
 
 		<div class="grid-item clickable" data-size="2"
 			onclick="window.location.href='https://adam-pangelinan-resume.tiiny.site/';">
-			résumé
+			RÉSUMÉ
 		</div>
 
-		<div class=" grid-item clickable" data-size="2" onclick="window.location.href='/bookshelf.html';">
-			bookshelf
+		<div class=" grid-item clickable" data-size="2" onclick="window.location.href='/books.html';">
+			BOOKS
 		</div>
 
-		<div class=" grid-item" data-size="2">
-			contact 🚧
-			<!-- 
-				calendly
-				email
-				linkedin
-				whatsapp chat
-				discord chat
-			-->
+		<div class=" grid-item clickable" data-size="3" onclick="window.location.href='/links.html';">
+			LINKS
 	</main>
 
 	<!-- vanta script -->
+	<script src="three.r134.min.js"></script>
+	<script src="vanta.waves.min.js"></script>
 	<script>
-		window.addEventListener("DOMContentLoaded", (event) => {
-			const isMobile =
-				/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-					navigator.userAgent
-				);
-			VANTA.FOG({
-				el: "#vanta-container",
-				mouseControls: true,
-				touchControls: true,
-				gyroControls: false,
-				minHeight: 200.0,
-				minWidth: 200.0,
-				highlightColor: 0xc5ff,
-				midtoneColor: 0xffffff,
-				lowlightColor: 0xa0ff59,
-				baseColor: 0x33ff,
-				blurFactor: 0.5,
-				speed: isMobile ? 1.0 : 2.5, // Adjust speed based on device type
-				zoom: 3.0,
-			});
-		});
+		VANTA.WAVES({
+			el: "#vanta-container",
+			mouseControls: true,
+			touchControls: true,
+			gyroControls: false,
+			minHeight: 200.00,
+			minWidth: 200.00,
+			scale: 1.00,
+			scaleMobile: 1.00,
+			color: 0x1a8adb,
+			shininess: 150.00,
+			waveHeight: 40.00,
+			waveSpeed: 0.2,
+			zoom: 0.65
+		})
 	</script>
 </body>
 

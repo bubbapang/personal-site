@@ -5,10 +5,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.dots.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="/redsquare16.jpeg">
-    <title>projects</title>
+    <title>PROJECTS</title>
 </head>
 
 <body id="your-element-selector" style="width: 100vw; margin: 0; padding: 0;">
@@ -18,6 +18,13 @@
         <ul>
             <!-- what projects? -->
             <!-- check github -->
+
+            <h3>What I'm working on now:</h3>
+            <li></li>
+
+
+
+
 
 
             <h3><a href="https://github.com/bubbapang/audioboogie">Audioboogie</a> Oct.2023</h3>
@@ -32,38 +39,36 @@
             <h3><a href="https://peeramid.onrender.com/">Peeramid</a> May.2023</h3>
             <li>daily Maslow's Heirarchy tracker</li>
 
-            <br>
-            <br>
-            <br>
-            <br>
 
-            <h5>check my "now" page to see if I'm working on something new.</h5>
 
-            <h5>lots of abandoned projects did not make this list :/</h5>
+
+
+
+            <h3>Abandoned projects:</h3>
+            <li></li>
+
+
 
 
         </ul>
 
     </main>
 
+    <script src="three.r134.min.js"></script>
+    <script src="vanta.dots.min.js"></script>
     <script>
-        window.addEventListener("DOMContentLoaded", (event) => {
-            VANTA.FOG({
-                el: "#vanta-container",
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: 200.0,
-                minWidth: 200.0,
-                highlightColor: 0xffbe0b,
-                midtoneColor: 0xfb5607,
-                lowlightColor: 0xff006e,
-                baseColor: 0x8338ec,
-                blurFactor: 0.5,
-                speed: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? 1.0 : 2.5,
-                zoom: 3.0,
-            });
-        });
+    VANTA.DOTS({
+      el: "#vanta-container",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      backgroundColor: 0x0,
+      showLines: false
+    })
     </script>
 </body>
 

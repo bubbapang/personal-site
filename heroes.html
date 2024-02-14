@@ -4,11 +4,13 @@
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.halo.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="/redsquare16.jpeg">
-    <title>heroes</title>
+    <title>HEROES</title>
 </head>
 
 <body id="your-element-selector" style="width: 100vw; margin: 0; padding: 0;">
@@ -76,25 +78,20 @@
 
     </main>
 
-    <script>
-        window.addEventListener("DOMContentLoaded", (event) => {
-            VANTA.FOG({
+        <script>
+            VANTA.HALO({
                 el: "#vanta-container",
-                mouseControls: true,
+                mouseControls: false,
                 touchControls: true,
                 gyroControls: false,
-                minHeight: 200.0,
-                minWidth: 200.0,
-                highlightColor: 0x003049,
-                midtoneColor: 0xd62828,
-                lowlightColor: 0xf77f00,
-                baseColor: 0x003049,
-                blurFactor: 0.5,
-                speed: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? 1.0 : 2.5,
-                zoom: 3.0,
-            });
-        });
-    </script>
+                minHeight: 200.00,
+                minWidth: 200.00,
+                baseColor: 0x41ff,
+                backgroundColor: 0xff9000,
+                amplitudeFactor: 0.00,
+                xOffset: 0.10
+            })
+        </script>
 </body>
 
 </html>

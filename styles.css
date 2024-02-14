@@ -1,11 +1,4 @@
 
-:root {
-    --base-grid-height: 10vh; /* Base height for data-size="1" */
-    --base-grid-width: 10vw; /* Base width for data-size="1" */
-    --font-size-ratio: 2.5; /* Adjust this ratio to scale font sizes */
-}
-
-
 ul {
 	padding-left: 20px;
 	font-size: 170%;
@@ -13,16 +6,14 @@ ul {
 	max-width: 40%;
 }
 
-@media (max-width: 768px) {
-	ul {
-		font-size: 130%;
-		/* Smaller font size on mobile */
-		max-width: 80%;
-		/* Use more of the screen width */
-		padding-left: 10px;
-		/* Adjust padding for smaller screens */
-	}
+a:link, a:visited {
+    text-decoration: none;
 }
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
 
 li:before {
 	content: '♦ ';
@@ -46,9 +37,9 @@ html {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
-	/* Prevent horizontal scrolling */
-	font-family: "helvetica neue", helvetica, sans-serif;
-	/* cursor: none; */
+	font-family: "roboto", sans-serif;
+	
+	/* make hyperlinks no text decoration, and have an underline */
 
 }
 
@@ -63,18 +54,19 @@ html {
 }
 
 .grid-container {
-	position: relative;
-	z-index: 1;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	gap: 5vh;
-	padding: 20px;
-	width: 100vw;
-	min-height: 100vh;
+	flex-wrap: wrap;
 	box-sizing: border-box;
 	overflow-y: auto;
+	margin: auto;
+	position: absolute;
+	z-index: 1;
+	gap: 1vh;
+	
+	width: 100vw;
+	height: 100vh;
 }
 
 .grid-item {
@@ -94,18 +86,17 @@ html {
 	padding: 10px;
 	word-wrap: break-word;
 	height: calc(var(--base-grid-height) * attr(data-size));
-    width: calc(var(--base-grid-width) * attr(data-size));
+	width: calc(var(--base-grid-width) * attr(data-size));
 	font-size: calc((var(--base-grid-height) + var(--base-grid-width)) / 20 * var(--font-size-ratio) * attr(data-size));
-
+	/* text wrap */
+	overflow: hidden;
 }
 
-/* Styles for odd numbered grid items */
 .grid-item:nth-child(odd) {
 	border-top-right-radius: 30%;
 	border-bottom-left-radius: 30%;
 }
 
-/* Styles for even numbered grid items */
 .grid-item:nth-child(even) {
 	border-top-left-radius: 30%;
 	border-bottom-right-radius: 30%;
@@ -124,7 +115,6 @@ html {
 	z-index: -1;
 }
 
-/* Hover effect adjustments for scalability */
 .clickable:hover {
 	transform: scale(1.05);
 	/* Reduced scale factor to ensure it fits */
@@ -134,53 +124,43 @@ html {
 	/* Example hover effect */
 }
 
-/* Adjust the sizes and font sizes based on data-size */
 .grid-item[data-size="1"] {
-	height: 10vh;
-	width: 10vh;
-    font-size: calc((var(--base-grid-height) + var(--base-grid-width)) / 20 * var(--font-size-ratio));
+	height: 5vh;
+	width: 5vh;
+	font-size: 50%;
 }
 
 .grid-item[data-size="2"] {
-	height: 20vh;
-	width: 20vh;
-    font-size: calc((var(--base-grid-height) + var(--base-grid-width)) / 18 * var(--font-size-ratio));
+	height: 10vh;
+	width: 10vh;
+	font-size: 100%;
 }
 
 .grid-item[data-size="3"] {
-	height: 30vh;
-	width: 30vh;
-    font-size: calc((var(--base-grid-height) + var(--base-grid-width)) / 16 * var(--font-size-ratio));
+	height: 20vh;
+	width: 20vh;
+	font-size: 200%;
 }
 
 .grid-item[data-size="4"] {
 	height: 40vh;
 	width: 40vh;
-    font-size: calc((var(--base-grid-height) + var(--base-grid-width)) / 14 * var(--font-size-ratio));
+	font-size: 250%;
 }
 
 .grid-item[data-size="5"] {
-	height: 50vh;
-	width: 50vh;
-    font-size: calc((var(--base-grid-height) + var(--base-grid-width)) / 12 * var(--font-size-ratio));
+	height: 80vh;
+	width: 80vh;
+	font-size: 300%;
 }
 
 @media (max-width: 768px) {
-    :root {
-        --base-grid-height: 15vh; /* Larger base height on mobile */
-        --base-grid-width: 15vw; /* Larger base width on mobile */
-        --font-size-ratio: 3; /* Larger font size ratio on mobile */
-    }
-}
-
-
-a {
-	text-decoration: none;
-	/* Removes underline */
-}
-
-a:hover,
-a:active {
-	text-decoration: underline;
-	/* Optional: underline on hover for visual feedback */
+	:root {
+		--base-grid-height: 15vh;
+		/* Larger base height on mobile */
+		--base-grid-width: 15vw;
+		/* Larger base width on mobile */
+		--font-size-ratio: 3;
+		/* Larger font size ratio on mobile */
+	}
 }

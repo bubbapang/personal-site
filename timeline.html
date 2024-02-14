@@ -4,17 +4,19 @@
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
+
+    <!-- p5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.topology.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="/redsquare16.jpeg">
-    <title>timeline</title>
+    <title>TIMELINE</title>
 </head>
 
 <body id="your-element-selector" style="width: 100vw; margin: 0; padding: 0;">
     <div id="vanta-container"></div>
 
-    <main class="grid-container">
+    <main class="grid-container" style="color: white;">
         <ul>
             <!-- only noteworthy. if it can be removed, remove. inflection points ONLY. is it useful to the reader? -->
 
@@ -97,24 +99,21 @@
             <br>
     </main>
 
+    <script src="p5.min.js"></script>
+    <script src="vanta.topology.min.js"></script>
     <script>
-        window.addEventListener("DOMContentLoaded", (event) => {
-            VANTA.FOG({
-                el: "#vanta-container",
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: 200.0,
-                minWidth: 200.0,
-                highlightColor: 0xd4e09b,
-                midtoneColor: 0xf6f4d2,
-                lowlightColor: 0xcbdfbd,
-                baseColor: 0xf19c79,
-                blurFactor: 0.5,
-                speed: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? 1.0 : 2.5,
-                zoom: 3.0,
-            });
-        });
+        VANTA.TOPOLOGY({
+            el: "#vanta-container",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 0.5,
+            scaleMobile: 1.00,
+            backgroundColor: 0x2222,
+            color: 0x89964e
+        })
     </script>
 </body>
 
