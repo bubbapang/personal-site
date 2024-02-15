@@ -17,81 +17,60 @@
     <div id="vanta-container"></div>
 
     <main class="grid-container" style="color: white;">
-        <ul>
-            <h3>S</h3>
-            <li>Peter Thiel</li>
-            <br>
-
-            <h3>A</h3>
-            <li>Tim Ferriss</li>
-            <br>
-
-            <h3>B</h3>
-            <li>John Vervaeke</li>
-            <li>Derek Sivers</li>
-            <br>
-
-            <h3>C</h3>
-            <li>Rick Rubin</li>
-            <li>Andrew Huberman</li>
-            <li>Ryan Holiday</li>
-            <li>Visakan Veerasamy</li>
-            <br>
-
-            <h3>D</h3>
-            <br>
-
-            <h3>F</h3>
-
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <h3>Certified Mainstream</h3>
-            <li>Elon Musk</li>
-            <li>Paul McCartney</li>
-            <li>Jordan Peterson</li>
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <h3>Honorable Mentions</h3>
-            <li>Kevin Kelly</li>
-            <li>David Goggins</li>
-            <li>Pieter Levels</li>
-
-            <br>
-            <br>
-            <br>
-
-            <h3>I'm for sure missing people that I'll add later</h3>
-
-
-
+        <!-- make the ul more to the left -->
+        <ul style="
+            margin-left: 10%;
+        ">
+            <h1>Hero Pantheon</h1>
+            <div class="rankBox">
+                <h3>10/10</h3>
+                <p>Peter Thiel</p>
+            </div>
+            <div class="rankBox">
+                <h3>9/10</h3>
+                <p>Tim Ferriss</p>
+            </div>
+            <div class="rankBox">
+                <h3>8/10</h3>
+            </div>
+            <div class="rankBox">
+                <h3>7/10</h3>
+                <p>Derek Sivers</p>
+            </div>
+            <div class="rankBox">
+                <h3>6/10</h3>
+                <p>Visakan Veerasamy</p>
+                <p>Jordan Peterson</p>
+                <p>Andrew Huberman</p>
+                <p>Rick Rubin</p>
+                <p>Elon Musk</p>
+                <p>John Vervaeke</p>
+            </div>
+            <div class="rankBox">
+                <h3>5/10</h3>
+                <p>Paul Graham</p>
+                <p>Pieter Levels</p>
+                <p>David Goggins</p>
+                <p>Naval Ravikant</p>
+                <p>Ryan Holiday</p>
+            </div>
+            <h3>I'm for sure missing peeps</h3>
         </ul>
-
     </main>
-
-        <script>
-            VANTA.HALO({
-                el: "#vanta-container",
-                mouseControls: false,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: 200.00,
-                minWidth: 200.00,
-                baseColor: 0x41ff,
-                backgroundColor: 0xff9000,
-                amplitudeFactor: 0.00,
-                xOffset: 0.10
-            })
-        </script>
+    <script>
+        VANTA.HALO({
+            el: "#vanta-container",
+            mouseControls: false,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            baseColor: 0x41ff,
+            backgroundColor: 0xff9000,
+            amplitudeFactor: 0.00,
+            xOffset: 0.10
+        })
+    </script>
 </body>
 
 </html>
