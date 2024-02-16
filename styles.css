@@ -24,11 +24,9 @@ a:focus {
 }
 
 li:before {
-	content: '♦ ';
 	/* Adds a star before each list item */
 	padding-right: 5px;
 	/* Adjust space between the star and the list item text */
-	color: rgb(0, 211, 106);
 	/* Or any color you prefer */
 }
 
@@ -58,7 +56,6 @@ html {
 	width: 100vw;
 	height: 100vh;
 	z-index: -1;
-	/* Ensure it stays behind other content */
 }
 
 .grid-container {

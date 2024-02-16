@@ -7,7 +7,7 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.dots.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="/redsquare16.jpeg">
@@ -17,27 +17,13 @@
 <body id="your-element-selector" style="width: 100vw; margin: 0; padding: 0;">
     <div id="vanta-container"></div>
 
-    <main class="grid-container" style="color: white;">
-        <ul style="
-            margin-left: 20%;
-            ">
-
-            <!-- reading -->
-            <h1>Reading:</h1>
-            <li>*placeholder*</li>
-
-            <br>
-            <br>
-            <br>
-            <br>
-
+    <main class="grid-container" style="color: black;">
+        <ul>
             <div class="rankBox" style="flex-direction: column;">
                 <h3>10/10</h3>
                 <li>Zero to One</li>
             </div>
 
-            <br>
-            <br>
             <br>
             <br>
 
@@ -47,15 +33,11 @@
 
             <br>
             <br>
-            <br>
-            <br>
             
             <div class="rankBox" style="flex-direction: column;">
                 <h3>8/10</h3>
             </div>
 
-            <br>
-            <br>
             <br>
             <br>
             
@@ -66,16 +48,12 @@
 
             <br>
             <br>
-            <br>
-            <br>
             
             <div class="rankBox" style="flex-direction: column;">
                 <h3>6/10</h3>
                 <li>the war of art</li>
             </div>
 
-            <br>
-            <br>
             <br>
             <br>
             
@@ -99,8 +77,6 @@
 
             <br>
             <br>
-            <br>
-            <br>
 
             <h3>Want to Read:</h3>
             <li>books so old they start with "the" (bible, etc.)</li>
@@ -109,7 +85,7 @@
         </ul>
     </main>
     <script>
-        VANTA.BIRDS({
+        VANTA.DOTS({
             el: "#vanta-container",
             mouseControls: true,
             touchControls: true,
@@ -118,13 +94,11 @@
             minWidth: 200.00,
             scale: 1.00,
             scaleMobile: 1.00,
-            backgroundColor: 0x0,
-            colorMode: "lerp",
-            wingSpan: 40.00,
-            separation: 50.00,
-            alignment: 50.00,
-            cohesion: 50.00,
-            quantity: 3.00
+            backgroundColor: 0xffffff,
+            // make color red
+            color: 0xff0000,
+            color2: 0xff0000,
+            showLines: false
         })
     </script>
 
