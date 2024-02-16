@@ -1,16 +1,8 @@
-.rankBox {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: flex-start;
-	gap: 30px;
-}
-
 ul {
 	padding-left: 20px;
 	font-size: 170%;
 	margin: 0 auto;
-	max-width: 40%;
+	/* max-width: 40%; */
 }
 
 a:link,
