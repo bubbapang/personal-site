@@ -16,10 +16,7 @@ ul {
 a:link,
 a:visited {
 	text-decoration: none;
-}
-
-a:hover,
-a:focus {
+	color: #ffffff;
 	text-decoration: underline;
 }
 
@@ -28,6 +25,7 @@ li:before {
 	padding-right: 5px;
 	/* Adjust space between the star and the list item text */
 	/* Or any color you prefer */
+	content: "★";
 }
 
 li {
